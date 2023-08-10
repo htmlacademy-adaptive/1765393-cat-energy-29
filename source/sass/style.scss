@@ -1,1 +1,11 @@
-// Начните писать стили здесь
+@use "../sass/blocks/main-header.scss";
+@use "../sass/blocks/main-footer.scss";
+@use "../sass/common/button.scss";
+@use "../sass/common/fonts.scss";
+@use "../sass/common/global.scss";
+@use "../sass/common/mixins.scss";
+@use "../sass/common/title.scss";
+@use "../sass/common/variables.scss";
+@use "../sass/common/visually-hidden.scss";
+@use "../sass/common/container.scss";
+@use "../sass/blocks/index/location.scss";

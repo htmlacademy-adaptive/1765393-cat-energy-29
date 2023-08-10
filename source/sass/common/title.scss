@@ -1,0 +1,12 @@
+@use "../common/mixins" as *;
+@use "../common/variables" as *;
+
+.title {
+  color: var($basic-black);
+}
+
+.title--index-promo {
+  color: var($basic-white);
+  font-size: 36px;
+  line-height: 36px
+}

@@ -1,0 +1,7 @@
+@use "../common/mixins" as *;
+@use "../common/variables" as *;
+
+.container {
+  padding-left: var($padding-mobile);
+  padding-right: var($padding-mobile);
+}

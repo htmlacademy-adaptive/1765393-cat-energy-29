@@ -1,0 +1,60 @@
+
+@use "sass:math";
+// для подключения модуля math в scss
+@use "variables";
+
+@mixin lg {
+  @media (min-width: variables.$lg) {
+    @content;
+  }
+}
+
+// чтобы применить его, надо вызвать:
+// @include mixins.lg {
+//   font-size: 14px;
+// }
+//
+// &:hover {
+//    color: #000000;
+// }
+
+//vw
+$layout-width: 1980; //указываем ширину макета, от которой вычисляем vw
+
+@function vw($size) {
+  @return #{(math.div($size, $layout-width)*100)}vw;
+}
+
+@function clampvw($min, $max) {
+  @return clamp(#{$min}px, #{(math.div($max, $layout-width)*100)}vw, #{$max}px);
+}
+
+// Применение функций vw и clamp
+// .dd {
+//   font-size: vw(120);  вызываем функцию vw, 120 размер в px из макета, а вставится уже в vw
+// }
+// .dd {
+//   font-size: clampvw(18, 120);
+// }
+// clamp - резина для текста, он меняется от 18 до 120 при расширении экрана
+
+@mixin container {
+
+  width: 100%;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  //outline: 1px solid deepskyblue;
+  //overflow-x: hidden;
+
+  @include lg {
+    --w: #{clampvw(770, 1720)};
+    --p: calc((100vw - var(var(--w))) / 2);
+    //--p: calc((100vw - 1520px)/2);
+    //max-width: $lg;
+    max-width: clampvw(770, 1520); // чтобы были пропорциональные поля
+  }
+}
