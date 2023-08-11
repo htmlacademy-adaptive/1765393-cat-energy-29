@@ -6,7 +6,7 @@ $width-tablet: 768px;
 $width-desktop: 1440px;
 
 // Padding
-$padding-mobile: 50px;
+$padding-mobile: 20px;
 $padding-tablet: 30px;
 $padding-desktop: 30px;
 
@@ -14,8 +14,12 @@ $padding-desktop: 30px;
 $basic-black: #000000;
 $secondary-black: #222222;
 $basic-green: #68b738;
-$green-hover: #5eaa2f;
+$basic-green-hover: #5eaa2f;
+$bg-green: #69b738;
 $basic-white: #ffffff;
+$basic-white-opacity: rgba(255, 255, 255, 0.3);
+$basic-grey: #f2f2f2;
+$bg-basic-grey: #eaeaea;
 $dark-grey: #444444;
 
 // Sizes

@@ -2,6 +2,6 @@
 @use "../common/variables" as *;
 
 .container {
-  padding-left: var($padding-mobile);
-  padding-right: var($padding-mobile);
+  padding-left: $padding-mobile;
+  padding-right: $padding-mobile;
 }

@@ -1,0 +1,14 @@
+@use "../common/mixins" as *;
+@use "../common/variables" as *;
+
+.index-promo {
+  background-image: url(../img/bg-cat.jpg), linear-gradient(to right, #64a73c 50%, #62a53a 50%);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-position: top;
+  background-size: auto 302px;
+  padding-top: 27px;
+  padding-bottom: 20px;
+}

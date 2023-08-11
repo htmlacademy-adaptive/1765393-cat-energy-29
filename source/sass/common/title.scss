@@ -2,11 +2,21 @@
 @use "../common/variables" as *;
 
 .title {
-  color: var($basic-black);
+  color: $basic-black;
+  font-family: "Oswald";
+  font-weight: 400;
 }
 
 .title--index-promo {
-  color: var($basic-white);
+  color: $basic-white;
   font-size: 36px;
-  line-height: 36px
+  line-height: 36px;
+  text-align: center;
+}
+
+.title--slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $basic-white;
 }

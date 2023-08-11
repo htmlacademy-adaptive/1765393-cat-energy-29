@@ -2,23 +2,32 @@
 @use "../common/variables" as *;
 
 .button {
-  background-color: var($basic-green);
   font-family: "Oswald", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  background-color: $basic-green;
+  color: $basic-white;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
   border: none;
-  color: $basic-white;
+  padding: 14px 26px;
+  display: inline-block;
+  cursor: pointer;
 
   &:hover {
-    background-color: #000000;
+    background-color: $basic-green-hover;
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    background-color: $basic-green-hover;
+    color: $basic-white-opacity;
+
   }
+}
+
+.product-button {
+  width: 100%;
+  max-width: $width-mobile;
 }

@@ -1,0 +1,14 @@
+@use "../common/mixins" as *;
+@use "../common/variables" as *;
+
+.product__item {
+  background-color: $basic-grey;
+  list-style-type: none;
+}
+
+.title--product-subtitle {
+  color: $dark-grey;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 18px;
+}
