@@ -1,0 +1,21 @@
+@use "../common/mixins" as *;
+@use "../common/variables" as *;
+
+.benefits__item {
+  font-family: "Lato";
+  list-style-type: none;
+}
+
+.benefits__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+.benefits__title {
+  font-size: 36px;
+  line-height: 40px;
+}
+

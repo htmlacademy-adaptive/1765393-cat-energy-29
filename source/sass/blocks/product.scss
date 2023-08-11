@@ -4,11 +4,41 @@
 .product__item {
   background-color: $basic-grey;
   list-style-type: none;
+  padding: 20px;
 }
 
-.title--product-subtitle {
-  color: $dark-grey;
-  font-family: Lato;
-  font-size: 14px;
-  line-height: 18px;
+.product__subtitle {
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.product__desc {
+  font-family: "Lato";
+  margin-bottom: 38px;
+}
+
+.product__desc::after {
+  content: "";
+  display: block;
+  margin-top: 20px;
+  box-shadow: 0 0 0 1px $line-grey;
+  width: 100%;
+}
+
+.product__link {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  color: $basic-black;
+  margin-top: 20px;
+}
+
+.product__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }

@@ -1,0 +1,45 @@
+@use "../common/mixins" as *;
+@use "../common/variables" as *;
+
+.benefits-example {
+  background-color: $bg-basic-grey;
+  padding: 20px;
+}
+
+.benefits-example__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.benefits-example__number {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  color: $basic-black;
+}
+
+.benefits-example__description {
+  text-align: center;
+  font-family: "Lato";
+  font-size: 12px;
+  line-height: 100%;
+  margin: 0;
+}
+
+.benefits-example__line-text {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: "Oswald";
+}
+
+.benefits-example__image-container {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,2 +1,19 @@
 @use "../common/mixins" as *;
 @use "../common/variables" as *;
+
+.main-footer__academy-text {
+  font-family: "Lato";
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.main-footer__academy-link {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+ }
+
+ .main-footer__logo {
+  align-items: center;
+ }
