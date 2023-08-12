@@ -23,11 +23,12 @@
   &:active {
     background-color: $basic-green-hover;
     color: $basic-white-opacity;
-
   }
 }
 
 .product-button {
   width: 100%;
   max-width: $width-mobile;
+  font-size: 14px;
+  line-height: 18px;
 }
