@@ -2,9 +2,8 @@
 @use "../common/variables" as *;
 
 .filter-program {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  display: grid;
+  grid-row-start: auto;
   gap: 14px;
   border: none;
 }
@@ -29,29 +28,29 @@
   font-size: 16px;
   cursor: pointer;
   text-transform: uppercase;
- }
+}
 
- .filter-program__list {
+.filter-program__list {
   list-style-type: none;
- }
+}
 
- .filter-program__title {
-   color: $basic-black;
-   font-size: 24px;
-   line-height: 26px;
- }
+.filter-program__title {
+  color: $basic-black;
+  font-size: 24px;
+  line-height: 26px;
+}
 
- .filter-program__text--comment {
-   padding: 14px;
- }
+.filter-program__text--comment {
+  padding: 14px;
+}
 
- .filter-button {
+.filter-button {
   width: 100%;
- }
+}
 
- .filter-button-text {
- color: $basic-black;
- text-align: center;
- font-family: "Lato";
- line-height: 16px;
+.filter-button-text {
+  color: $basic-black;
+  text-align: center;
+  font-family: "Lato";
+  line-height: 16px;
 }
