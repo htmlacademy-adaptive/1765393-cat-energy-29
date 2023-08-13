@@ -10,11 +10,18 @@
   justify-content: space-between;
 }
 
+.location__wrapper-opaque {
+  background-color: $basic-grey;
+}
+
 .location__dealers {
   color: $third-black;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
 .location__address-text {
@@ -24,6 +31,9 @@
   text-decoration: none;
   font-style: normal;
   color: $dark-grey;
+  margin: 0;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
 .location__map-image {

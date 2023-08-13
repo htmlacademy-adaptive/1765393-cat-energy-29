@@ -17,3 +17,11 @@
 .main-footer__logo {
   align-items: center;
 }
+
+.main-footer__wrapper {
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  background-color: $basic-grey;
+}
