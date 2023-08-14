@@ -72,22 +72,15 @@
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2");
   font-display: swap;
-}
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/oswald/oswaldmedium.woff2") format("woff2");
-  font-display: swap;
+  src: url("../fonts/oswald/oswaldregular.woff") format("woff"), url("../fonts/oswald/oswaldregular.woff2") format("woff2");
 }
 @font-face {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2");
   font-display: swap;
+  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2"), url("../fonts/lato/Lato-Regular.woff") format("woff");
 }
 html {
   height: 100%;
@@ -205,7 +198,7 @@ a {
 }
 
 .index-promo {
-  background-image: url(../img/bg-cat.jpg), linear-gradient(to right, #64a73c 50%, #62a53a 50%);
+  background-image: url("../img/bg-cat.jpg"), linear-gradient(to right, #64a73c 50%, #62a53a 50%);
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
