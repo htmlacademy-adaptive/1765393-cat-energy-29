@@ -1,0 +1,11 @@
+@use "../common/mixins" as *;
+@use "../common/variables" as *;
+
+.main-navigation__list {
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  list-style-type: none;
+  text-decoration: none;
+}

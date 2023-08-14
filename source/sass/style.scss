@@ -1,1 +1,24 @@
-// Начните писать стили здесь
+// Common
+@use "common/button";
+@use "common/fonts";
+@use "common/global";
+@use "common/title";
+@use "common/visually-hidden";
+@use "common/container";
+
+// Blocks
+@use "blocks/main-header";
+@use "blocks/main-footer";
+@use "blocks/location";
+@use "blocks/index-promo";
+@use "blocks/main-navigation";
+@use "blocks/product";
+@use "blocks/benefits";
+@use "blocks/benefits-example";
+@use "blocks/footer-social";
+@use "blocks/filter-program";
+@use "blocks/catalog-product";
+@use "blocks/card";
+@use "blocks/catalog-more";
+@use "blocks/catalog";
+@use "blocks/site-list";

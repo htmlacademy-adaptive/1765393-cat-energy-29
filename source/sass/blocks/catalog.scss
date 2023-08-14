@@ -1,0 +1,20 @@
+@use "../common/mixins" as *;
+@use "../common/variables" as *;
+
+.catalog__title {
+  color: $basic-black;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.catalog__gift {
+  color: $basic-white;
+  text-align: center;
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  background-color: $bg-green;
+  height: 290px;
+}

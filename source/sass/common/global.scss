@@ -1,0 +1,40 @@
+@use "../common/mixins" as *;
+@use "../common/variables" as *;
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  min-width: $width-mobile;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: var($basic-white);
+  color: $dark-grey;
+  font-family: var(--font-basic);
+  font-weight: 400;
+
+  @media (min-width: $width-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

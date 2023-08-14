@@ -1,0 +1,65 @@
+@use "../common/mixins" as *;
+@use "../common/variables" as *;
+
+.card__title {
+  color: $secondary-black;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.card__title--more {
+  color: $third-black;
+  text-align: center;
+}
+
+.card__title-more {
+  color: $secondary-black;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  font-family: var(--font-secondary);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.card__text--more {
+  text-align: center;
+}
+
+.card__text-more {
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.card__button {
+  width: 100%;
+}
+
+.card__button-more {
+  background-color: $basic-grey;
+  color: $dark-grey;
+
+  &:hover {
+    background-color: $basic-grey-hover;
+  }
+
+  &:active {
+    background-color: $basic-grey-hover;
+    color: $dark-grey-opacity;
+  }
+}
+
+.card__table-add {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

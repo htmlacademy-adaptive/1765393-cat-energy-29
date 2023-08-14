@@ -1,0 +1,6 @@
+@use "../common/mixins" as *;
+@use "../common/variables" as *;
+
+.site-list__link {
+  color: $basic-black;
+}

@@ -1,0 +1,13 @@
+@use "../common/mixins" as *;
+@use "../common/variables" as *;
+
+.catalog-product__list {
+  list-style-type: none;
+  display: grid;
+  gap: 25px;
+  padding: 0;
+}
+
+.catalog-product__item {
+  padding-top: 20px;
+}

@@ -1,0 +1,11 @@
+@use "../common/mixins" as *;
+@use "../common/variables" as *;
+
+.container {
+  padding-left: var(--padding-container);
+  padding-right: var(--padding-container);
+
+  @media (min-width: $width-tablet) {
+    --padding-container: 30px;
+  }
+}

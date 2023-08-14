@@ -3,22 +3,21 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт Энерджи. Питание для вашего кота</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
 
   <!-- Header -->
 
-  <header class="main-header">
+  <header class="container main-header">
 
     <a class="main-header__logo" href="index.html" aria-current="page">
-      <img class="main-header__logo-image" src="#" width="33" height="38" alt="Логотип сайта Кэт Энерджи.">
-    </a>
-
-    <a class="main-header__logo" href="index.html" aria-current="page">
-      <img class="main-header__logo-text" src="#" width="101" height="18"
+      <img class="main-header__logo-image" src="img/logo-mobile.svg" width="33" height="38"
+        alt="Логотип сайта Кэт Энерджи.">
+      <img class="main-header__logo-text" src="img/logo-mobile-text.svg" width="101" height="18"
         alt="Текстовый логотип сайта Кэт Энерджи на английском.">
     </a>
 
@@ -51,19 +50,19 @@
 
   <!-- Main -->
 
-  <main class="container container--index">
+  <main class="container-index">
 
-    <section class="index-promo">
+    <section class="container index-promo">
       <h1 class="title index-promo__title">Функциональное питание для котов</h1>
-      <p class="index-promo__slogan">Занялся собой? Займись котом!</p>
-      <img class="index-promo__image" src="#" width="280" height="270"
+      <p class="title index-promo__slogan">Занялся собой? Займись котом!</p>
+      <img class="index-promo__image" src="img/promo-chicken.png" width="280" height="270"
         alt="Баночка функционального питания Cat Energy PRO с курицей 500г.">
-      <a class="button product-button" href="form.html">
+      <a class="button button--product" href="form.html">
         Подобрать программу
       </a>
     </section>
 
-    <section class="product">
+    <section class="container product">
       <h2 class="visually-hidden">Выбор программы для вашего кота</h2>
       <ul class="product__list">
 
@@ -88,7 +87,7 @@
       </ul>
     </section>
 
-    <section class="benefits">
+    <section class="container benefits">
       <h2 class="title benefits__title">Как это работает</h2>
       <ul class="benefits__list">
         <li class="benefits__item benefits__item--leaf">
@@ -106,7 +105,7 @@
       </ul>
     </section>
 
-    <section class="benefits benefits-example">
+    <section class="container benefits benefits-example">
       <div class="benefits-example__wrapper">
         <h2 class="title benefits__title">Живой пример</h2>
         <p class="benefits-example__desc">
@@ -132,20 +131,24 @@
         </dl>
         <p class="benefits-example__line-text">Затраты на питание: 15&nbsp;000&nbsp;руб.</p>
 
-        <img class="benefits-example__image-pro" src="#" width="280" height="256" alt="Наглядное преобразование кота.">
-        <img class="benefits-example__image-slim" src="#" width="280" height="256" alt="Наглядное преобразование кота.">
+        <div class="benefits-example__image-container">
+          <img class="benefits-example__image-pro" src="img/cat-fat.png" width="280" height="256"
+            alt="Наглядное преобразование кота.">
+          <img class="benefits-example__image-slim" src="img/cat-thin.png" width="280" height="256"
+            alt="Наглядное преобразование кота.">
+
+          <!-- Range-slider -->
+          <div class="range-slider">
+            <div class="range-slider__bar" style="height: 256px">
+              <button class="range-slider__toggle" type="button">
+                <span class="visually-hidden">Сравнение кота до диеты и после</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Range-slider -->
-
-    <div class="range-slider">
-      <div class="range-slider__bar" style="height: 256px">
-        <button class="range-slider__toggle" type="button">
-          <span class="visually-hidden">Сравнение кота до диеты и после</span>
-        </button>
-      </div>
-    </div>
   </main>
 
   <!-- Footer -->
@@ -153,7 +156,7 @@
   <footer class="main-footer">
 
     <section class="location">
-      <div class="location__wrapper">
+      <div class="container location__wrapper">
         <h2 class="visually-hidden">Адрес компании</h2>
         <p class="location__dealers">Приглашаем к сотрудничеству дилеров!</p>
         <address class="location__address">
@@ -166,14 +169,14 @@
       </div>
       <iframe class="location__map"></iframe>
       <a class="location__link-map" href="#">
-        <img class="location__map-image" src="#" width="320" height="362"
+        <img class="location__map-image" src="img/map.png" width="320" height="362"
           alt="Карта с местностью расположения компании.">
       </a>
     </section>
 
-    <div class="main-footer__wrapper">
+    <div class="container main-footer__wrapper">
       <a class="main-footer__logo" href="index.html" aria-current="page">
-        <img class="main-footer__logo-image-text" src="#" width="128" height="24"
+        <img class="main-footer__logo-image-text" src="img/logo-mobile-text.svg" width="128" height="24"
           alt="Текстовый логотип сайта Кэт Энерджи на английском.">
       </a>
 
@@ -203,10 +206,11 @@
         </ul>
       </section>
 
-      <div class="footer-academy">
-        <a class="footer-academy__link">
-          <span class="footer-academy__text">HTML Academy</span>
-          <img class="footer-academy__image-icon" src="#" width="27" height="34" alt="Иконка логотипа.">
+      <div class="main-footer__academy">
+        <a class="main-footer__academy-link">
+          <span class="main-footer__academy-text">HTML Academy</span>
+          <img class="main-footer__academy-image" src="img/logo-html.svg" width="27" height="34"
+            alt="Иконка логотипа.">
         </a>
       </div>
     </div>
