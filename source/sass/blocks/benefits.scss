@@ -2,7 +2,7 @@
 @use "../common/variables" as *;
 
 .benefits__item {
-  font-family: "Lato";
+  font-family: var(--font-secondary);
   list-style-type: none;
 }
 

@@ -51,28 +51,28 @@
   <!-- Main -->
 
   <main class="container container--form">
-    <h1 class="form-title">Подбор программы</h1>
-    <p class="form-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <h1 class="title title--form">Подбор программы</h1>
+    <p class="title title--form-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <form class="filter-container" action="https://echo.htmlacademy.ru/" method="post">
 
       <fieldset class="filter-program">
         <legend class="visually-hidden">Введите данные кота</legend>
 
-        <label class="input">
+        <label class="filter-program__input">
           <span class="filter-program__text">Имя:<sup>*</sup></span>
-          <input class="filter-program__text text-input" type="text" name="name-cat" id="name" placeholder="Укажите имя"
+          <input class="filter-program__text filter-program__input-text" type="text" name="name-cat" id="name" placeholder="Укажите имя"
             value="Барсик" required>
         </label>
 
-        <label class="input">
+        <label class="filter-program__input">
           <span class="filter-program__text">Вес (кг):<sup>*</sup></span>
-          <input class="filter-program__text text-input" type="number" name="weight" id="weight"
+          <input class="filter-program__text filter-program__input-text" type="number" name="weight" id="weight"
             placeholder="Укажите вес" value="7" required>
         </label>
 
-        <label class="input">
+        <label class="filter-program__input">
           <span class="filter-program__text">Возраст (лет):</span>
-          <input class="filter-program__text text-input" type="number" name="age" id="age" placeholder="Укажите возраст"
+          <input class="filter-program__text filter-program__input-text" type="number" name="age" id="age" placeholder="Укажите возраст"
             value="7">
         </label>
       </fieldset>
@@ -111,15 +111,15 @@
       <fieldset class="filter-program">
         <legend class="filter-program__title">Контактные данные (владельца кота)</legend>
 
-        <label class="input">
+        <label class="filter-program__input">
           <span class="filter-program__text">E-mail:<sup>*</sup></span>
-          <input class="filter-program__text text-input" type="email" name="e-mail" placeholder="Ваш e-mail"
+          <input class="filter-program__text filter-program__input-text" type="email" name="e-mail" placeholder="Ваш e-mail"
             value="kuklachev@gmail.com" required>
         </label>
 
-        <label class="input">
+        <label class="filter-program__input">
           <span class="filter-program__text">Телефон:<sup>*</sup></span>
-          <input class="filter-program__text text-input" type="tel" name="tel" placeholder="Укажите телефон"
+          <input class="filter-program__text filter-program__input-text" type="tel" name="tel" placeholder="Укажите телефон"
             value="8 (960) 900-60-90" required>
         </label>
       </fieldset>
@@ -168,8 +168,8 @@
 
       <section class="filter-container">
         <h2 class="visually-hidden">Отправить форму</h2>
-        <button class="button filter-button" type="submit">Отправить заявку</button>
-        <p class="filter-button-text">* — Обязательные поля</p>
+        <button class="button button--filter" type="submit">Отправить заявку</button>
+        <p class="title title--filter">* — Обязательные поля</p>
       </section>
 
     </form>

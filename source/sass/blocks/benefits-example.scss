@@ -1,6 +1,5 @@
 @use "../common/mixins" as *;
 @use "../common/variables" as *;
-@use "../common/fonts.scss";
 
 .benefits-example {
   background-color: $bg-basic-grey;
@@ -23,7 +22,7 @@
 
 .benefits-example__description {
   text-align: center;
-  font-family: "Lato";
+  font-family: var(--font-secondary);
   font-size: 12px;
   line-height: 100%;
   margin: 0;
@@ -43,5 +42,5 @@
 }
 
 .benefits-example__desc {
-  font-family: "Lato";
+  font-family: var(--font-secondary);
 }
