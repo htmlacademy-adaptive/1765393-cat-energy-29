@@ -1,5 +1,6 @@
 @use "../common/mixins" as *;
 @use "../common/variables" as *;
+@use "../common/fonts.scss";
 
 .benefits-example {
   background-color: $bg-basic-grey;
