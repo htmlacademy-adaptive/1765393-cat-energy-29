@@ -20,14 +20,12 @@
 }
 
 .main-navigation__toggle {
-
   @media (min-width: $width-tablet) {
     display: none;
   }
 }
 
 .main-navigation--wrapper {
-
   @media (max-width: $width-tablet) {
     display: none;
   }
