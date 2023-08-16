@@ -8,4 +8,8 @@
   @media (min-width: $width-tablet) {
     --padding-container: 30px;
   }
+
+  @media (min-width: $width-desktop) {
+    --padding-container: 110px;
+  }
 }

@@ -40,4 +40,14 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+
+  @media (min-width: $width-tablet) {
+    gap: 30px;
+  }
+
+  @media (min-width: $width-desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }

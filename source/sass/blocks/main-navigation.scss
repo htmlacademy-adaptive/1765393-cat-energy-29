@@ -8,4 +8,27 @@
   text-align: center;
   list-style-type: none;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 33px;
+  }
+}
+
+.main-navigation__toggle {
+
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
+}
+
+.main-navigation--wrapper {
+
+  @media (max-width: $width-tablet) {
+    display: none;
+  }
 }

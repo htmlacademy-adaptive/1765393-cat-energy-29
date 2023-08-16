@@ -1,6 +1,20 @@
 @use "../common/mixins" as *;
 @use "../common/variables" as *;
 
+.benefits {
+  padding-top: 20px;
+  padding-bottom: 49px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 45px;
+    padding-bottom: 47px;
+  }
+  @media (min-width: $width-desktop) {
+    padding-top: 71px;
+    padding-bottom: 69px;
+  }
+}
+
 .benefits__item {
   font-family: var(--font-secondary);
   list-style-type: none;
@@ -12,6 +26,17 @@
   display: flex;
   flex-wrap: wrap;
   gap: 26px;
+
+  @media (min-width: $width-tablet) {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    gap: 37px 153px;
+  }
+  @media (min-width: $width-desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .benefits__title {
