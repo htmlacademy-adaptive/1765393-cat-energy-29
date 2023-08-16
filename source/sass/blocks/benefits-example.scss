@@ -3,7 +3,15 @@
 
 .benefits-example {
   background-color: $bg-basic-grey;
-  padding: 20px;
+  padding: 25px 20px 40px;
+
+  @media (min-width: $width-tablet) {
+    padding: 45px 30px 101px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 2px 110px 75px;
+  }
 }
 
 .benefits-example__list {

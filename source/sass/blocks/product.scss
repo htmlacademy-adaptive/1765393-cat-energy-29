@@ -37,8 +37,7 @@
 .product__list {
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 20px;
 
   @media (min-width: $width-tablet) {
@@ -46,7 +45,6 @@
   }
 
   @media (min-width: $width-desktop) {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
   }

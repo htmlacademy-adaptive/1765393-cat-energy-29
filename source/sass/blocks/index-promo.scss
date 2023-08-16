@@ -56,6 +56,10 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $width-desktop) {
+    
+  }
 }
 
 .index-promo__button {

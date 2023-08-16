@@ -19,6 +19,14 @@
 .benefits__item {
   font-family: var(--font-secondary);
   list-style-type: none;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  align-items: center;
+  gap: 20px;
+
+  @media (min-width: $width-tablet) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .benefits__list {
@@ -44,4 +52,36 @@
 .benefits__title {
   font-size: 36px;
   line-height: 40px;
+  margin-bottom: 40px;
+}
+
+.benefits__item::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: $basic-green;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $width-tablet) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.benefits__item--leaf::before {
+  background-image: url("../../img/icon/leaf.svg");
+}
+
+.benefits__item--water::before {
+  background-image: url("../../img/icon/water.svg");
+}
+
+.benefits__item--cutlery::before {
+  background-image: url("../../img/icon/cutlery.svg");
+}
+
+.benefits__item--watch::before {
+  background-image: url("../../img/icon/watch.svg");
 }

@@ -6,8 +6,14 @@
 }
 
 .location__wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 26px;
+  padding-bottom: 26px;
+
+  @media (min-width: $width-tablet) {
+    padding: 60px 70px;
+  }
 }
 
 .location__wrapper-opaque {
@@ -20,8 +26,6 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 26px;
-  padding-bottom: 26px;
 }
 
 .location__address-text {
@@ -32,8 +36,13 @@
   font-style: normal;
   color: $dark-grey;
   margin: 0;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $width-tablet) {
+    gap: 20px;
+    text-align: end;
+  }
 }
 
 .location__map-image {
