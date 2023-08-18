@@ -38,7 +38,7 @@
 
   @media (min-width: $width-tablet) {
     display: grid;
-    grid-template-columns: 250px 250px;
+    grid-template-columns: 1fr 1fr;
     gap: 37px 153px;
   }
 
@@ -71,17 +71,17 @@
 }
 
 .benefits__item--leaf::before {
-  background-image: url("../../img/icon/leaf.svg");
+  background-image: url("../img/icon/leaf.svg");
 }
 
 .benefits__item--water::before {
-  background-image: url("../../img/icon/water.svg");
+  background-image: url("../img/icon/water.svg");
 }
 
 .benefits__item--cutlery::before {
-  background-image: url("../../img/icon/cutlery.svg");
+  background-image: url("../img/icon/cutlery.svg");
 }
 
 .benefits__item--watch::before {
-  background-image: url("../../img/icon/watch.svg");
+  background-image: url("../img/icon/watch.svg");
 }

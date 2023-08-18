@@ -7,7 +7,7 @@
   flex-wrap: wrap;
   gap: 24px;
   margin: 0;
-  padding: 8px;
+  padding: 20px;
 }
 
 .footer-social::after {
@@ -34,21 +34,22 @@
   }
 }
 
-.footer-social__link {
+.footer-social__item {
   background-position: center;
   background-repeat: no-repeat;
   width: 28px;
   height: 22px;
+  list-style-type: none;
 }
 
-.footer-social__link--vk {
+.footer-social__item--vk {
   background-image: url("../img/icon/vkontakte.svg");
 }
 
-.footer-social__link--youtube {
+.footer-social__item--youtube {
   background-image: url("../img/icon/youtube.svg");
 }
 
-.footer-social__link--telegram {
+.footer-social__item--telegram {
   background-image: url("../img/icon/telegram.svg");
 }

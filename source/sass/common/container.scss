@@ -4,6 +4,9 @@
 .container {
   padding-left: var(--padding-container);
   padding-right: var(--padding-container);
+  width: 100%;
+  max-width: $width-max;
+  margin: 0 auto;
 
   @media (min-width: $width-tablet) {
     --padding-container: 30px;

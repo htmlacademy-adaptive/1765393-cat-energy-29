@@ -3,4 +3,21 @@
 
 .site-list__link {
   color: $basic-black;
+
+  @media (min-width: $width-desktop) {
+    color: $basic-white;
+  }
+}
+
+.site-list__link--current::after {
+  content: "";
+  display: block;
+  box-shadow: 0 0 0 1px $basic-green;
+  margin-bottom: 10px;
+  width: 100%;
+
+  @media (min-width: $width-desktop) {
+    box-shadow: 0 0 0 1px $basic-white;
+    margin-bottom: 8px;
+  }
 }

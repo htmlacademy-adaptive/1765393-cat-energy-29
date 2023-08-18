@@ -18,6 +18,9 @@
   @media (min-width: $width-desktop) {
     padding-top: 55px;
     padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: linear-gradient(to right, $basic-white 50%, #62a53a 50%);
   }
 }
 
