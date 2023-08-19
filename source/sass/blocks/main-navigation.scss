@@ -20,6 +20,13 @@
 }
 
 .main-navigation__toggle {
+  background-image: url("../img/icon/menu.svg");
+  background-repeat: no-repeat;
+  background-color: $basic-white;
+  background-position: right;
+  width: 24px;
+  height: 16px;
+
   @media (min-width: $width-tablet) {
     display: none;
   }

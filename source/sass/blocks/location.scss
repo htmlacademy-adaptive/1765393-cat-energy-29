@@ -14,6 +14,13 @@
   @media (min-width: $width-tablet) {
     padding: 60px 70px;
   }
+
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    width: 565px;
+    background-color: $basic-white;
+    margin: 95px 110px 106px;
+  }
 }
 
 .location__wrapper-opaque {
@@ -40,8 +47,12 @@
   flex-direction: column;
 
   @media (min-width: $width-tablet) {
-    gap: 20px;
+    gap: 19px;
     text-align: end;
+  }
+
+  @media (min-width: $width-desktop) {
+    text-align: start;
   }
 }
 
