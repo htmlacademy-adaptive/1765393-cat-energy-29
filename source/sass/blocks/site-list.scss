@@ -3,7 +3,9 @@
 
 .site-list__link {
   color: $basic-black;
+}
 
+.site-list__link--transparent {
   @media (min-width: $width-desktop) {
     color: $basic-white;
   }
@@ -13,11 +15,19 @@
   content: "";
   display: block;
   box-shadow: 0 0 0 1px $basic-green;
-  margin-bottom: 10px;
+  margin-top: 10px;
   width: 100%;
 
   @media (min-width: $width-desktop) {
     box-shadow: 0 0 0 1px $basic-white;
-    margin-bottom: 8px;
+    margin-top: 8px;
   }
+}
+
+.site-list__item--current-form::after {
+  content: "";
+  display: block;
+  box-shadow: 0 0 0 1px $basic-green;
+  margin-top: 8px;
+  width: 100%;
 }

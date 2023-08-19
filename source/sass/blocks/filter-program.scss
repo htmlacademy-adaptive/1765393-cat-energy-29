@@ -18,6 +18,9 @@
 
 .filter-program__input {
   cursor: pointer;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
 }
 
 .filter-program__input-text {
@@ -28,12 +31,107 @@
   list-style-type: none;
 }
 
-.filter-program__title {
-  color: $basic-black;
-  font-size: 24px;
-  line-height: 26px;
+.filter-program__list--radio {
+  @media (min-width: $width-tablet) {
+    outline: 1px solid $line-grey;
+  }
+}
+
+.filter-program__list--checkbox {
+  @media (min-width: $width-tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $width-desktop) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .filter-program__text--comment {
   padding: 14px;
+}
+
+.filter-program__line::before {
+  content: "";
+  display: block;
+  box-shadow: 0 0 0 1px $line-grey;
+  width: 100%;
+
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
+}
+
+.filter-program__line::after {
+  content: "";
+  display: block;
+  box-shadow: 0 0 0 1px $line-grey;
+  width: 100%;
+
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
+}
+
+.filter-program--padding-name {
+  padding-top: 39px;
+  padding-bottom: 24px;
+}
+
+.filter-program--padding-program {
+  padding: 0;
+
+  @media (min-width: $width-tablet) {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: $width-max;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.filter-program__title {
+  color: $basic-black;
+  font-size: 24px;
+  line-height: 26px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 65px;
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 70px;
+    padding-bottom: 57px;
+  }
+}
+
+.filter-program__item--radio,
+.filter-program__item-checkbox {
+  text-transform: uppercase;
+}
+
+.filter-program__wrapper {
+  outline: 1px solid $line-grey;
+  min-height: 150px;
+}
+
+.filter-program__send {
+  @media (min-width: $width-tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @media (min-width: $width-desktop) {
+    gap: 80px;
+  }
 }
