@@ -19,13 +19,22 @@
     padding-top: 0;
     padding-bottom: 54px;
   }
+
+  @media (min-width: $width-desktop) {
+    padding-bottom: 55px;
+  }
 }
+
 
 .title--form-text {
   color: $basic-black;
   text-transform: uppercase;
   font-size: 20px;
   line-height: 30px;
+
+  @media (min-width: $width-desktop) {
+    padding-bottom: 66px;
+  }
 }
 
 .title--filter {

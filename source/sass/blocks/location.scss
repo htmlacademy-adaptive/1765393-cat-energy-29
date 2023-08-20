@@ -25,6 +25,10 @@
 
 .location__wrapper-opaque {
   background-color: $basic-grey;
+
+  @media (min-width: $width-desktop) {
+    background-color: $basic-white;
+  }
 }
 
 .location__dealers {

@@ -1,0 +1,24 @@
+@use "../common/mixins" as *;
+@use "../common/variables" as *;
+
+.line::before {
+  content: "";
+  display: block;
+  box-shadow: 0 0 0 1px $line-grey;
+  width: 100%;
+
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
+}
+
+.line::after {
+  content: "";
+  display: block;
+  box-shadow: 0 0 0 1px $line-grey;
+  width: 100%;
+
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
+}

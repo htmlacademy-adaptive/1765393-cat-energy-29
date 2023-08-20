@@ -26,7 +26,7 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
 
-      <div class="main-navigation--wrapper">
+      <div class="main-navigation__wrapper">
         <ul class="main-navigation__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">
@@ -50,10 +50,10 @@
 
   <!-- Main -->
 
-  <main class="filter-program__line">
+  <main class="line">
     <h1 class="container title title--form">Подбор программы</h1>
     <p class="container title title--form-text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
-    <form class="filter-program__filter-container" action="https://echo.htmlacademy.ru/" method="post">
+    <form class="filter-program filter-program--filter-container" action="https://echo.htmlacademy.ru/" method="post">
 
       <fieldset class="container filter-program filter-program--padding-name">
         <legend class="visually-hidden">Введите данные кота</legend>
@@ -77,7 +77,7 @@
         </label>
       </fieldset>
 
-      <fieldset class="filter-program filter-program__line filter-program--padding-program">
+      <fieldset class="filter-program line filter-program--padding-program">
         <legend class="visually-hidden">Выбор программы</legend>
         <ul class="filter-program__list filter-program__list--radio">
 
@@ -109,7 +109,7 @@
       </fieldset>
 
       <fieldset class="container filter-program filter-program--padding-contact">
-        <legend class="filter-program__title">Контактные данные (владельца кота)</legend>
+        <legend class="filter-program__title">Контактные&nbsp;данные&nbsp;(владельца&nbsp;кота)</legend>
 
         <label class="filter-program__input">
           <span class="filter-program__text">E&nbsp;-&nbsp;mail:<sup>*</sup></span>
@@ -124,14 +124,14 @@
         </label>
       </fieldset>
 
-      <fieldset class="container filter-program">
+      <fieldset class="container filter-program filter-program--comment">
         <legend class="filter-program__title">Комментарий</legend>
         <div class="filter-program__wrapper">
           <p class="filter-program__text filter-program__text--comment">Расскажите обо всех повадках кота</p>
         </div>
       </fieldset>
 
-      <fieldset class="container filter-program">
+      <fieldset class="container filter-program filter-program--extra">
         <legend class="filter-program__title">Дополнительно</legend>
         <ul class="filter-program__list filter-program__list--checkbox">
 
@@ -166,7 +166,7 @@
         </ul>
       </fieldset>
 
-      <section class="container filter-program__filter-container filter-program__send">
+      <section class="container filter-program__send">
         <h2 class="visually-hidden">Отправить форму</h2>
         <button class="button button--filter" type="submit">Отправить заявку</button>
         <p class="title title--filter">* — Обязательные поля</p>
