@@ -13,7 +13,7 @@
 
   <!-- Header -->
 
-  <header class="container main-header">
+  <header class="container main-header main-header--transparent">
 
     <a class="main-header__logo" href="index.html" aria-current="page">
       <img class="main-header__logo-image" src="img/logo-mobile.svg" width="33" height="38"
@@ -27,10 +27,10 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
 
-      <div class="main-navigation--wrapper">
+      <div class="main-navigation__wrapper">
         <ul class="main-navigation__list site-list">
-          <li class="site-list__item site-list__item--current">
-            <a class="site-list__link" href="index.html" aria-current="page">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">
               Главная
             </a>
           </li>
@@ -39,8 +39,8 @@
               Каталог продукции
             </a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
+          <li class="site-list__item site-list__item--current-form">
+            <a class="site-list__link" href="form.html" aria-current="page">
               Подбор программы
             </a>
           </li>
@@ -51,12 +51,12 @@
 
   <!-- Main -->
 
-  <main class="container container--form">
-    <h1 class="title title--form">Подбор программы</h1>
-    <p class="title title--form-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-    <form class="filter-container" action="https://echo.htmlacademy.ru/" method="post">
+  <main class="line">
+    <h1 class="container title title--form">Подбор программы</h1>
+    <p class="container title title--form-text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+    <form class="filter-program filter-program--filter-container" action="https://echo.htmlacademy.ru/" method="post">
 
-      <fieldset class="filter-program">
+      <fieldset class="container filter-program filter-program--padding-name">
         <legend class="visually-hidden">Введите данные кота</legend>
 
         <label class="filter-program__input">
@@ -66,21 +66,21 @@
         </label>
 
         <label class="filter-program__input">
-          <span class="filter-program__text">Вес (кг):<sup>*</sup></span>
+          <span class="filter-program__text">Вес&nbsp;(кг):<sup>*</sup></span>
           <input class="filter-program__text filter-program__input-text" type="number" name="weight" id="weight"
             placeholder="Укажите вес" value="7" required>
         </label>
 
         <label class="filter-program__input">
-          <span class="filter-program__text">Возраст (лет):</span>
+          <span class="filter-program__text">Возраст&nbsp;(лет):</span>
           <input class="filter-program__text filter-program__input-text" type="number" name="age" id="age" placeholder="Укажите возраст"
             value="7">
         </label>
       </fieldset>
 
-      <fieldset class="filter-program">
+      <fieldset class="filter-program line filter-program--padding-program">
         <legend class="visually-hidden">Выбор программы</legend>
-        <ul class="filter-program__list">
+        <ul class="filter-program__list filter-program__list--radio">
 
           <li class="filter-program__item filter-program__item--radio">
             <label class="control">
@@ -109,11 +109,11 @@
         </ul>
       </fieldset>
 
-      <fieldset class="filter-program">
-        <legend class="filter-program__title">Контактные данные (владельца кота)</legend>
+      <fieldset class="container filter-program filter-program--padding-contact">
+        <legend class="filter-program__title">Контактные&nbsp;данные&nbsp;(владельца&nbsp;кота)</legend>
 
         <label class="filter-program__input">
-          <span class="filter-program__text">E-mail:<sup>*</sup></span>
+          <span class="filter-program__text">E&nbsp;-&nbsp;mail:<sup>*</sup></span>
           <input class="filter-program__text filter-program__input-text" type="email" name="e-mail" placeholder="Ваш e-mail"
             value="kuklachev@gmail.com" required>
         </label>
@@ -125,14 +125,14 @@
         </label>
       </fieldset>
 
-      <fieldset class="filter-program">
+      <fieldset class="container filter-program filter-program--comment">
         <legend class="filter-program__title">Комментарий</legend>
         <div class="filter-program__wrapper">
           <p class="filter-program__text filter-program__text--comment">Расскажите обо всех повадках кота</p>
         </div>
       </fieldset>
 
-      <fieldset class="filter-program">
+      <fieldset class="container filter-program filter-program--extra">
         <legend class="filter-program__title">Дополнительно</legend>
         <ul class="filter-program__list filter-program__list--checkbox">
 
@@ -167,7 +167,7 @@
         </ul>
       </fieldset>
 
-      <section class="filter-container">
+      <section class="container filter-program__send">
         <h2 class="visually-hidden">Отправить форму</h2>
         <button class="button button--filter" type="submit">Отправить заявку</button>
         <p class="title title--filter">* — Обязательные поля</p>
@@ -183,7 +183,7 @@
     <section class="location">
       <div class="container location__wrapper location__wrapper-opaque">
         <h2 class="visually-hidden">Адрес компании</h2>
-        <p class="location__dealers">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="location__dealers">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
         <address class="location__address">
           <a class="location__address-link" href="#">
             <p class="location__address-text">ул. Большая Конюшенная, д.&nbsp;19/8 <span
@@ -209,21 +209,21 @@
         <h2 class="visually-hidden">Список социальных сетей</h2>
         <ul class="footer-social__list">
 
-          <li class="footer-social__item">
-            <a class="footer-social__link footer-social__link--vk" href="https://vk.com/htmlacademy">
+          <li class="footer-social__item footer-social__item--vk">
+            <a class="footer-social__link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
 
-          <li class="footer-social__item">
-            <a class="footer-social__link footer-social__link--youtube"
+          <li class="footer-social__item footer-social__item--youtube">
+            <a class="footer-social__link"
               href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
 
-          <li class="footer-social__item">
-            <a class="footer-social__link footer-social__link--telegram" href="https://t.me/htmlacademy">
+          <li class="footer-social__item footer-social__item--telegram">
+            <a class="footer-social__link" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
