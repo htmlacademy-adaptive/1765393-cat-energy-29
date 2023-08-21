@@ -9,10 +9,12 @@
   position: relative;
   padding-top: 14px;
   padding-bottom: 14px;
+  height: 66px; // Возможно надо удалить
 
   @media (min-width: $width-tablet) {
     padding-top: 25px;
     padding-bottom: 65px;
+    height: auto;
   }
 
   @media (min-width: $width-desktop) {

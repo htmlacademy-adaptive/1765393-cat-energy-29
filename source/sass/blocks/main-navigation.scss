@@ -11,6 +11,17 @@
   margin: 0;
   padding: 0;
 
+  @media (max-width: $width-tablet) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: $basic-white;
+    width: 100%;
+    margin-top: 33px;
+    z-index: 2;
+    border-top: 1px solid $line-grey;
+  }
+
   @media (min-width: $width-tablet) {
     display: flex;
     justify-content: flex-end;
@@ -19,21 +30,73 @@
   }
 }
 
+// Область под бургер
 .main-navigation__toggle {
-  background-image: url("../img/icon/menu.svg");
-  background-repeat: no-repeat;
-  background-color: $basic-white;
-  background-position: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
   width: 24px;
-  height: 16px;
+  height: 66px;
+  background-color: $basic-white;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $basic-white;
+    opacity: 0.6;
+  }
 
   @media (min-width: $width-tablet) {
     display: none;
   }
 }
 
+// Отключение списка навигации
 .main-navigation__wrapper {
   @media (max-width: $width-tablet) {
     display: none;
+  }
+}
+
+// Бургер
+.main-navigation--closed .main-navigation__toggle::before {
+  @media (max-width: $width-tablet) {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $basic-black;
+    box-shadow: 0 6px 0 0 $basic-black, 0 12px 0 0 $basic-black;
+  }
+}
+
+.main-navigation--opened .main-navigation__toggle::after {
+  @media (max-width: $width-tablet) {
+    content: "";
+    position: absolute;
+    display: inline-flex;
+    top: 23px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: $basic-black;
+    transform: rotate(45deg);
+  }
+}
+
+.main-navigation--opened .main-navigation__toggle::before {
+  @media (max-width: $width-tablet) {
+    content: "";
+    position: absolute;
+    display: inline-flex;
+    top: 23px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: $basic-black;
+    transform: rotate(-45deg);
   }
 }
