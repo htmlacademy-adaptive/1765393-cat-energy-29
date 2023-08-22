@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
 
-  @media (max-width: $width-tablet) {
+  @media (max-width: $width-mobile-only) {
     position: absolute;
     left: 0;
     right: 0;
@@ -54,14 +54,14 @@
 
 // Отключение списка навигации
 .main-navigation__wrapper {
-  @media (max-width: $width-tablet) {
+  @media (max-width: $width-mobile-only) {
     display: none;
   }
 }
 
 // Бургер
 .main-navigation--closed .main-navigation__toggle::before {
-  @media (max-width: $width-tablet) {
+  @media (max-width: $width-mobile-only) {
     content: "";
     position: absolute;
     top: 24px;
@@ -74,7 +74,7 @@
 }
 
 .main-navigation--opened .main-navigation__toggle::after {
-  @media (max-width: $width-tablet) {
+  @media (max-width: $width-mobile-only) {
     content: "";
     position: absolute;
     display: inline-flex;
@@ -88,7 +88,7 @@
 }
 
 .main-navigation--opened .main-navigation__toggle::before {
-  @media (max-width: $width-tablet) {
+  @media (max-width: $width-mobile-only) {
     content: "";
     position: absolute;
     display: inline-flex;

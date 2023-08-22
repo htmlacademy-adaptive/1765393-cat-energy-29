@@ -37,7 +37,7 @@
 }
 
 .site-list__item {
-  @media (max-width: $width-tablet) {
+  @media (max-width: $width-mobile-only) {
     padding: 22px 0 24px;
     border-bottom: 1px solid $line-grey;
   }

@@ -59,6 +59,10 @@
     line-height: 60px;
     text-align: left;
   }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 70px;
+  }
 }
 
 .index-promo__slogan {
@@ -108,6 +112,6 @@
     width: 552px;
     height: 499px;
     position: absolute;
-    left: 41%;
+    left: 40%;
   }
 }
