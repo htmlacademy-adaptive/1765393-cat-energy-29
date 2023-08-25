@@ -1,9 +1,12 @@
-// Viewport
+// Width
 $width-mobile: 320px;
 $width-mobile-only: 767px;
 $width-tablet: 768px;
 $width-desktop: 1440px;
-$width-max: 1800px;
+$width-max: 1440px;
+
+// Height
+$height-header: 66px;
 
 // Color
 $basic-black: #000000;
@@ -13,6 +16,7 @@ $third-black: #111111;
 $basic-green: #68b738;
 $basic-green-hover: #5eaa2f;
 $bg-green: #69b738;
+$bg-cat: #62a53a;
 
 $basic-white: #ffffff;
 

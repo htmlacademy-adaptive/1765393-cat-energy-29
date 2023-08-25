@@ -3,8 +3,9 @@
 
 .main-footer {
   width: 100%;
-  max-width: $width-max;
+  //max-width: $width-max;
   margin: 0 auto;
+  background-color: $basic-grey;
 }
 
 .main-footer__academy-text {
@@ -31,15 +32,22 @@
 }
 
 .main-footer__wrapper {
-  margin: 0;
+  //margin: 0;
   padding-top: 40px;
   padding-bottom: 40px;
   text-align: center;
-  background-color: $basic-grey;
+  //background-color: $basic-grey;
 
   @media (min-width: $width-tablet) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 55px+38px; //+38px карта
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 66px+38px;
+    padding-bottom: 66px;
   }
 }
