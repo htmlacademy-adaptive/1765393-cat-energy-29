@@ -2,16 +2,43 @@
 @use "../common/variables" as *;
 
 .catalog-more__title {
+  --padding-form: 20px;
+
   color: $basic-black;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
-  border-bottom: 1px solid $line-grey;
-  padding-bottom: 36px;
+  position: relative;
+  padding-left: var(--padding-form);
+  padding-right: var(--padding-form);
+  margin-inline: -20px;
+  background-color: $basic-white;
+  width: fit-content;
 
   @media (min-width: $width-tablet) {
+    --padding-form: 40px;
+
+    margin-inline: 0;
     border-bottom: none;
   }
+
+  @media (min-width: $width-desktop) {
+    margin-inline: -40px;
+  }
+}
+
+.catalog-more__title::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  bottom: 50%;
+  display: block;
+  width: 100vw;
+  height: 2px;
+  background-color: #68b738;
+  z-index: -1;
+  box-shadow: 100vw 0 0 0 #68b738;
 }
 
 .catalog-more__list {
@@ -24,10 +51,15 @@
 .catalog-more__item {
   padding-top: 13px;
   padding-bottom: 19px;
+  border-bottom: 1px solid $line-grey;
 
   @media (min-width: $width-desktop) {
     display: grid;
     grid-template-columns: 325px 285px 1fr;
     gap: 17px;
   }
+}
+
+.catalog-more__item:first-child {
+  border-top: 1px solid $line-grey;
 }
