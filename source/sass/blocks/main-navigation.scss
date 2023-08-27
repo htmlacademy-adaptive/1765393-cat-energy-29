@@ -99,3 +99,16 @@
     transform: rotate(-45deg);
   }
 }
+
+.main-navigation--nojs .main-navigation__toggle {
+  display: none;
+}
+
+.main-navigation--nojs .main-navigation__wrapper {
+  position: static;
+  min-height: 0;
+}
+
+.main-navigation--nojs .site-list__item {
+  display: block;
+}

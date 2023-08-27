@@ -16,3 +16,16 @@
     --padding-container: 110px;
   }
 }
+
+.container--form {
+  padding-left: var(--padding-container);
+  padding-right: var(--padding-container);
+
+  @media (min-width: $width-tablet) {
+    --padding-container: 70px;
+  }
+
+  @media (min-width: $width-desktop) {
+    --padding-container: 110px;
+  }
+}

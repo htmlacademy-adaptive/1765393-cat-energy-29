@@ -66,8 +66,9 @@
   }
 }
 
-.main-header--transparent {
+.main-header--transparent::before {
   background-image: none;
+  background-color: $basic-white;
 }
 
 .main-header__logo-text {

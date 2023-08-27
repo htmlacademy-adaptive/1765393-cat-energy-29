@@ -24,6 +24,8 @@ $basic-grey: #f2f2f2;
 $bg-basic-grey: #eaeaea;
 $basic-grey-hover: #ebebeb;
 $line-grey: #d9d9d9;
+$outline-textarea: #e7e7e7;
+$outline-textarea-hover: #cdcdcd;
 $dark-grey: #444444;
 
 $dark-grey-opacity: rgb(68, 68, 68, 0.3);
@@ -45,4 +47,5 @@ $esm: 360px;
 
   // Padding
   --padding-container: 20px;
+  --padding-form: 70px;
 }

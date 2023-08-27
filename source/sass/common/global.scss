@@ -37,3 +37,10 @@ a {
 *::after {
   box-sizing: border-box;
 }
+
+sup {
+  position: static;
+  margin-left: 2px;
+  vertical-align: baseline;
+  font-size: inherit;
+}

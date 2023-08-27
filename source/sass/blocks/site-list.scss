@@ -26,6 +26,12 @@
   }
 }
 
+.site-list__link-opacity {
+  @media (min-width: $width-desktop) {
+    color: $third-black;
+  }
+}
+
 .site-list__item--current-form::after {
   @media (min-width: $width-tablet) {
     content: "";

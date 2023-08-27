@@ -52,10 +52,6 @@
   }
 }
 
-.filter-program__text--comment {
-  padding: 14px;
-}
-
 .filter-program--padding-name {
   padding-top: 39px;
   padding-bottom: 24px;
@@ -71,8 +67,8 @@
   padding: 0;
 
   @media (min-width: $width-tablet) {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: var(--padding-form);
+    padding-right: var(--padding-form);
     max-width: $width-max;
     margin: 0 auto;
     display: grid;
@@ -88,27 +84,55 @@
 
 .filter-program--padding-contact {
   @media (min-width: $width-desktop) {
-    padding-right: 0;
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
   }
 }
 
 .filter-program__title {
+  --padding-form: 20px;
+
   color: $basic-black;
   font-size: 24px;
   line-height: 26px;
   padding-top: 24px;
   padding-bottom: 24px;
-  min-width: 100%;
+  background-color: $basic-white;
+  padding-left: var(--padding-form);
+  padding-right: var(--padding-form);
+  margin-inline: -20px;
+  position: relative;
 
   @media (min-width: $width-tablet) {
+    --padding-form: 40px;
+
     padding-top: 65px;
     padding-bottom: 57px;
+    margin-inline: -40px;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $width-desktop) {
-    padding-top: 0;
     padding-bottom: 57px;
   }
+}
+
+.filter-program__title::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  bottom: 50%;
+  display: block;
+  width: 100vw;
+  height: 2px;
+  background-color: $basic-green;
+  z-index: -1;
+  box-shadow: 100vw 0 0 0 $basic-green;
 }
 
 .filter-program__item--radio,
@@ -117,8 +141,35 @@
 }
 
 .filter-program__wrapper {
-  outline: 1px solid $line-grey;
+  outline: 1px solid $outline-textarea;
   min-height: 150px;
+  resize: vertical;
+  border: none;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-family: var(--font-basic);
+  color: $dark-grey;
+  padding-top: 14px;
+  padding-left: 15px;
+
+  &:hover {
+    outline: 1px solid $outline-textarea-hover;
+  }
+
+  &:focus {
+    outline: 2px solid $dark-grey;
+  }
+
+  @media (min-width: $width-tablet) {
+    min-height: 175px;
+    padding-top: 11px;
+    padding-left: 20px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 9px;
+  }
 }
 
 .filter-program__send {
@@ -163,7 +214,7 @@
 
 .filter-program--comment {
   @media (min-width: $width-desktop) {
-    padding-left: 0;
+    grid-column: 1/-1;
   }
 }
 
