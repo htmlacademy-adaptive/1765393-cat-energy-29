@@ -21,6 +21,7 @@
   display: grid;
   grid-template-columns: min-content 1fr;
   align-items: center;
+  position: relative;
 }
 
 .filter-program__input-text {
@@ -222,5 +223,19 @@
   @media (min-width: $width-desktop) {
     padding-right: 0;
     grid-column: 1/-1;
+  }
+}
+
+.filter-program__icon {
+  position: absolute;
+  right: 0;
+  padding: 12px;
+
+  @media (min-width: $width-tablet) {
+    padding: 16px 14px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 16px;
   }
 }
