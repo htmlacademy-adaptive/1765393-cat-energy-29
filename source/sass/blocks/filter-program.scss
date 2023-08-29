@@ -22,10 +22,35 @@
   grid-template-columns: min-content 1fr;
   align-items: center;
   position: relative;
-}
 
-.filter-program__input-text {
-  padding: 14px;
+  .filter-program__input-text {
+    padding: 14px;
+    outline: 1px solid $outline-textarea;
+    border: none;
+  }
+
+  &:hover {
+    .filter-program__input-text {
+      outline: 1px solid $outline-textarea-hover;
+    }
+  }
+
+  &:active {
+    .filter-program__input-text {
+      outline: 1px solid $outline-textarea;
+      border: none;
+    }
+  }
+
+  &:focus {
+    .filter-program__input-text {
+      outline: 2px solid $dark-grey;
+    }
+
+    .filter-program__icon path {
+      stroke: $basic-green;
+    }
+  }
 }
 
 .filter-program__list {
