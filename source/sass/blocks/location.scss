@@ -2,16 +2,45 @@
 @use "../common/variables" as *;
 
 .location__map {
-  display: none;
+  border: none;
+  display: block;
+  z-index: 1;
+  width: 100%;
+  position: absolute;
+
+  @media (min-width: $width-tablet) {
+    height: 100%;
+    max-height: 400px;
+  }
 }
 
 .location__wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  background-color: $basic-white;
+
+  @media (min-width: $width-tablet) {
+    padding: 60px 70px;
+  }
+
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    //left: 8%;
+    width: 565px;
+    background-color: $basic-white;
+    margin: 95px 110px 106px;
+    z-index: 2;
+  }
 }
 
 .location__wrapper-opaque {
   background-color: $basic-grey;
+
+  @media (min-width: $width-desktop) {
+    background-color: $basic-white;
+  }
 }
 
 .location__dealers {
@@ -20,8 +49,6 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 26px;
-  padding-bottom: 26px;
 }
 
 .location__address-text {
@@ -32,8 +59,17 @@
   font-style: normal;
   color: $dark-grey;
   margin: 0;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $width-tablet) {
+    gap: 19px;
+    text-align: end;
+  }
+
+  @media (min-width: $width-desktop) {
+    text-align: start;
+  }
 }
 
 .location__map-image {
@@ -42,4 +78,14 @@
   height: 362px;
   max-height: 400px;
   display: block;
+}
+
+.location--map {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.location__link-map {
+  position: relative;
 }

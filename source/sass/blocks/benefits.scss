@@ -1,9 +1,20 @@
 @use "../common/mixins" as *;
 @use "../common/variables" as *;
 
-.benefits__item {
-  font-family: var(--font-secondary);
-  list-style-type: none;
+.benefits {
+  padding-top: 20px;
+  padding-bottom: 49px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 45px;
+    padding-bottom: 47px;
+    counter-reset: section;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 71px;
+    padding-bottom: 69px;
+  }
 }
 
 .benefits__list {
@@ -12,9 +23,109 @@
   display: flex;
   flex-wrap: wrap;
   gap: 26px;
+
+  @media (min-width: $width-tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 134px 153px;
+  }
+
+  @media (min-width: $width-desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .benefits__title {
   font-size: 36px;
   line-height: 40px;
+  margin-bottom: 40px;
+}
+
+.benefits__item {
+  font-family: var(--font-secondary);
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  align-items: center;
+  gap: 20px;
+
+  @media (min-width: $width-tablet) {
+    grid-template-columns: 1fr;
+    position: relative;
+    gap: 31px;
+  }
+}
+
+// Цифры
+.benefits__item::after {
+  @media (min-width: $width-tablet) {
+    counter-increment: section;
+    content: counter(section);
+    z-index: -1;
+    font-size: 280px;
+    line-height: 280px;
+    font-family: var(--font-basic);
+    color: $basic-grey;
+    position: absolute;
+    right: 0;
+  }
+}
+
+.benefits__item::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: $basic-green;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $width-tablet) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.benefits__item--leaf::before {
+  background-image: url("../img/icon/leaf.svg");
+}
+
+.benefits__item--water::before {
+  background-image: url("../img/icon/water.svg");
+}
+
+.benefits__item--cutlery::before {
+  background-image: url("../img/icon/cutlery.svg");
+}
+
+.benefits__item--watch::before {
+  background-image: url("../img/icon/watch.svg");
+}
+
+.benefits--example {
+  background-color: $bg-basic-grey;
+
+  @media (min-width: $width-tablet) {
+    background-image: linear-gradient(to top, $bg-basic-grey 40%, $basic-white 40%);
+  }
+
+  @media (min-width: $width-desktop) {
+    background-image: linear-gradient(to top, $bg-basic-grey 70%, $basic-white 70%);
+  }
+}
+
+.benefits--example::before {
+  @media (min-width: $width-tablet) {
+    content: "";
+    display: block;
+    box-shadow: 0 0 0 1px $line-grey;
+    width: 100%;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $width-desktop) {
+    display: none;
+  }
 }

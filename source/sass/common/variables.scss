@@ -1,23 +1,39 @@
-// Viewport
+// Width
 $width-mobile: 320px;
+$width-mobile-only: 767px;
 $width-tablet: 768px;
 $width-desktop: 1440px;
+$width-max: 1440px;
+
+// Height
+$height-header: 66px;
 
 // Color
 $basic-black: #000000;
 $secondary-black: #222222;
 $third-black: #111111;
+
 $basic-green: #68b738;
 $basic-green-hover: #5eaa2f;
 $bg-green: #69b738;
+$bg-cat: #62a53a;
+
 $basic-white: #ffffff;
-$basic-white-opacity: rgba(255, 255, 255, 0.3);
+
 $basic-grey: #f2f2f2;
 $bg-basic-grey: #eaeaea;
 $basic-grey-hover: #ebebeb;
 $line-grey: #d9d9d9;
+$outline-textarea: #e7e7e7;
+$outline-textarea-hover: #cdcdcd;
 $dark-grey: #444444;
+
+$error: #ff8282;
+
 $dark-grey-opacity: rgb(68, 68, 68, 0.3);
+$basic-white-opacity: rgba(255, 255, 255, 0.3);
+$basic-black-opacity: fade-out ($basic-black, 30%);
+
 
 // Sizes
 $elg: 1526px;
@@ -33,4 +49,5 @@ $esm: 360px;
 
   // Padding
   --padding-container: 20px;
+  --padding-form: 70px;
 }

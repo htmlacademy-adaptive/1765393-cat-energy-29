@@ -1,29 +1,158 @@
 @use "../common/mixins" as *;
 @use "../common/variables" as *;
 
+.product {
+  @media (min-width: $width-desktop) {
+    padding-top: 82px;
+  }
+}
+
 .product__item {
   background-color: $basic-grey;
   list-style-type: none;
   padding: 20px;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+
+  @media (min-width: $width-tablet) {
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: repeat(4, min-content);
+    padding: 77px 63px 53px 52px;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: repeat(3, min-content);
+    padding: 47px 61px 55px 52px;
+  }
+}
+
+// Зеленый круг для котов
+.product__item::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: $basic-green;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 20px;
+
+  @media (min-width: $width-tablet) {
+    width: 200px;
+    height: 200px;
+    grid-column: 2/3;
+    grid-row: 1/4;
+    position: static;
+    margin-right: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 100px;
+    height: 100px;
+    margin-right: 62px;
+    position: static;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
+// Коты
+.product__item::after {
+  content: "";
+  background-size: cover;
+  position: absolute;
+
+  @media (min-width: $width-tablet) {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    z-index: 0;
+    position: static;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
+.product__item--slim::after {
+  background-image: url("../img/icon/cat-slim.svg");
+  width: 36px;
+  height: 50px;
+
+  @media (min-width: $width-tablet) {
+    width: 140px;
+    height: 194px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 70px;
+    height: 97px;
+  }
+}
+
+.product__item--pro::after {
+  background-image: url("../img/icon/cat-pro.svg");
+  width: 67px;
+  height: 28px;
+
+  @media (min-width: $width-tablet) {
+    width: 268px;
+    height: 112px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 134px;
+    height: 56px;
+  }
 }
 
 .product__subtitle {
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
 }
 
 .product__desc {
   font-family: var(--font-secondary);
-  margin-bottom: 38px;
+  margin-bottom: 20px;
+  grid-column: 1/-1;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 48px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 23px;
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
 }
 
+// Серые линии
 .product__desc::after {
   content: "";
   display: block;
-  margin-top: 20px;
+  margin-top: 23px;
   box-shadow: 0 0 0 1px $line-grey;
   width: 100%;
+
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
 }
 
 .product__link {
@@ -31,13 +160,39 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $basic-black;
-  margin-top: 20px;
+  grid-column: 1/-1;
+  display: flex;
+
+  @media (min-width: $width-tablet) {
+    grid-column: 1/2;
+  }
+}
+
+.product__link::after {
+  content: "";
+  background-image: url("../img/icon/arrow.svg");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 10px;
+  margin-left: 15px;
+
+  @media (min-width: $width-tablet) {
+    margin-left: 25px;
+  }
 }
 
 .product__list {
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 20px;
+
+  @media (min-width: $width-tablet) {
+    gap: 30px;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }

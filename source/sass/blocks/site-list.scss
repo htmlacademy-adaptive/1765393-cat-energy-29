@@ -4,3 +4,47 @@
 .site-list__link {
   color: $basic-black;
 }
+
+.site-list__link--transparent {
+  @media (min-width: $width-desktop) {
+    color: $basic-white;
+  }
+}
+
+.site-list__link--current::after {
+  @media (min-width: $width-tablet) {
+    content: "";
+    display: block;
+    box-shadow: 0 0 0 1px $basic-green;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  @media (min-width: $width-desktop) {
+    box-shadow: 0 0 0 1px $basic-white;
+    margin-top: 8px;
+  }
+}
+
+.site-list__link-opacity {
+  @media (min-width: $width-desktop) {
+    color: $third-black;
+  }
+}
+
+.site-list__item--current-form::after {
+  @media (min-width: $width-tablet) {
+    content: "";
+    display: block;
+    box-shadow: 0 0 0 1px $basic-green;
+    margin-top: 8px;
+    width: 100%;
+  }
+}
+
+.site-list__item {
+  @media (max-width: $width-mobile-only) {
+    padding: 22px 0 24px;
+    border-bottom: 1px solid $line-grey;
+  }
+}

@@ -1,6 +1,14 @@
 @use "../common/mixins" as *;
 @use "../common/variables" as *;
 
+.card {
+  border-bottom: 1px solid $line-grey;
+
+  @media (min-width: $width-tablet) {
+    border-bottom: none;
+  }
+}
+
 .card__title {
   color: $secondary-black;
   font-size: 16px;
@@ -20,6 +28,7 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 .card__text {
@@ -40,8 +49,13 @@
   line-height: 14px;
 }
 
+.card__text--opposite {
+  text-align: end;
+}
+
 .card__button {
   width: 100%;
+  grid-column: 1/-1;
 }
 
 .card__button-more {
@@ -62,4 +76,33 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.card__table-more {
+  @media (min-width: $width-desktop) {
+    grid-column: 2/3;
+  }
+}
+
+.card--more {
+  grid-template-columns: 1fr;
+  padding-top: 25px;
+  background-image: none;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 50px;
+  }
+}
+
+.card__button--more {
+  @media (min-width: $width-desktop) {
+    width: 244px;
+    grid-column: 3/4;
+  }
+}
+
+.card__link--more {
+  @media (min-width: $width-desktop) {
+    grid-column: 1/2;
+  }
 }

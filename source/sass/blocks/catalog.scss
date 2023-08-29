@@ -6,6 +6,17 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  border-top: 1px solid $line-grey;
+  border-bottom: 1px solid $line-grey;
+  padding-top: 27px;
+  padding-bottom: 41px;
+
+  @media (min-width: $width-tablet) {
+    border-top: none;
+    border-bottom: none;
+    padding-top: 0;
+    padding-bottom: 84px;
+  }
 }
 
 .catalog__gift {
@@ -17,4 +28,25 @@
   line-height: 20px;
   background-color: $bg-green;
   height: 290px;
+  margin: 0 20px;
+  align-items: center;
+
+  @media (min-width: $width-tablet) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 116px;
+    margin-right: 110px;
+    min-width: 245px;
+  }
+}
+
+.catalog__section {
+  @media (min-width: $width-desktop) {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    margin: 0 auto;
+    max-width: $width-max;
+  }
 }

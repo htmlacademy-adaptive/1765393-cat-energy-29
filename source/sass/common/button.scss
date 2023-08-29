@@ -26,13 +26,13 @@
   }
 }
 
-.button--product {
-  width: 100%;
-  max-width: $width-mobile;
-  font-size: 14px;
-  line-height: 18px;
-}
-
 .button--filter {
+  margin-bottom: 21px;
   width: 100%;
+
+  @media (min-width: $width-desktop) {
+    margin-left: 110px;
+    max-width: 100%;
+    width: auto;
+  }
 }

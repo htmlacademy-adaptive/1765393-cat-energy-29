@@ -8,4 +8,107 @@
   text-align: center;
   list-style-type: none;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $width-mobile-only) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: $basic-white;
+    width: 100%;
+    margin-top: 33px;
+    z-index: 2;
+    border-top: 1px solid $line-grey;
+  }
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 33px;
+  }
+}
+
+// Область под бургер
+.main-navigation__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 24px;
+  height: 66px;
+  background-color: $basic-white;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $basic-white;
+    opacity: 0.6;
+  }
+
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
+}
+
+// Бургер
+.main-navigation--closed .main-navigation__toggle::before {
+  @media (max-width: $width-mobile-only) {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $basic-black;
+    box-shadow: 0 6px 0 0 $basic-black, 0 12px 0 0 $basic-black;
+  }
+}
+
+@media (max-width: $width-mobile-only) {
+  .main-navigation--closed .site-list__item {
+    display: none;
+  }
+}
+
+.main-navigation--opened .main-navigation__toggle::after {
+  @media (max-width: $width-mobile-only) {
+    content: "";
+    position: absolute;
+    display: inline-flex;
+    top: 23px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: $basic-black;
+    transform: rotate(45deg);
+  }
+}
+
+.main-navigation--opened .main-navigation__toggle::before {
+  @media (max-width: $width-mobile-only) {
+    content: "";
+    position: absolute;
+    display: inline-flex;
+    top: 23px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: $basic-black;
+    transform: rotate(-45deg);
+  }
+}
+
+.main-navigation--nojs .main-navigation__toggle {
+  display: none;
+}
+
+.main-navigation--nojs .main-navigation__wrapper {
+  position: static;
+  min-height: 0;
+}
+
+.main-navigation--nojs .site-list__item {
+  display: block;
 }

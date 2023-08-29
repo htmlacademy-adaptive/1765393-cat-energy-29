@@ -2,15 +2,31 @@
 @use "../common/variables" as *;
 
 .index-promo {
-  background-image: url("../img/bg-cat.jpg"), linear-gradient(to right, #64a73c 50%, #62a53a 50%);
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  gap: 25px;
   align-items: center;
-  background-position: top;
-  background-size: auto 302px;
   padding-top: 27px;
   padding-bottom: 20px;
+
+  @media (min-width: $width-tablet) {
+    background-image: none;
+    align-items: start;
+    padding: 0 90px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 0 0 0 80px;
+    margin-right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content 1fr;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 694px;
+    max-width: calc($width-max/2 - 110px);
+  }
 }
 
 .index-promo__title {
@@ -19,11 +35,67 @@
   line-height: 36px;
   text-align: center;
   font-weight: 400;
+  margin: 0;
+
+  @media (min-width: $width-tablet) {
+    color: $basic-black;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 70px;
+  }
 }
 
 .index-promo__slogan {
+  color: $basic-white;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  color: $basic-white;
+
+  @media (min-width: $width-tablet) {
+    color: $basic-black;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-column: 1/2;
+  }
+}
+
+.index-promo__button {
+  width: 100%;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $width-tablet) {
+    width: 244px;
+    font-size: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 347px;
+  }
+
+  @media (min-width: $width-desktop) {
+    position: static;
+    grid-column: 1/2;
+  }
+}
+
+.index-promo__image {
+  @media (min-width: $width-tablet) {
+    order: 4;
+    width: 709px;
+    height: 609px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 552px;
+    height: 499px;
+    position: absolute;
+    left: 40%;
+  }
 }
