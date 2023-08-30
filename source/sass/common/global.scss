@@ -19,6 +19,16 @@
   margin: 0;
   color: $dark-grey;
   background-color: $basic-white;
+
+  & input::-webkit-outer-spin-button,
+  & input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  & input::-webkit-contacts-auto-fill-button {
+    opacity: 0;
+  }
 }
 
 img {
