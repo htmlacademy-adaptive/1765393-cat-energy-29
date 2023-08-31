@@ -79,12 +79,14 @@
 
   @media (min-width: $width-tablet) {
     position: static;
+    align-self: center;
+    transform: none;
   }
 }
 
 .main-header__logo {
   @media (min-width: $width-tablet) {
-    width: 250px;
+    max-width: 210px;
     display: inline-flex;
     justify-content: space-between;
     gap: 13px;
