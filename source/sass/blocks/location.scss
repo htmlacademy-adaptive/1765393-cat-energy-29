@@ -1,6 +1,14 @@
 @use "../common/mixins" as *;
 @use "../common/variables" as *;
 
+.location {
+  @media (min-width: $width-desktop) {
+    display: grid;
+    grid-template-columns: 1fr $width-max 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
 .location__map {
   border: none;
   display: block;
@@ -26,8 +34,8 @@
   }
 
   @media (min-width: $width-desktop) {
-    position: absolute;
-    //left: 8%;
+    grid-column: 2/3;
+    grid-row: 1/-1;
     width: 565px;
     background-color: $basic-white;
     margin: 95px 110px 106px;
@@ -88,4 +96,9 @@
 
 .location__link-map {
   position: relative;
+
+  @media (min-width: $width-desktop) {
+    grid-column: 2/3;
+    grid-row: 1/-1;
+  }
 }

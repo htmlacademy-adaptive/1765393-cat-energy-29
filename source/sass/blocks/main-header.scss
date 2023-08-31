@@ -84,8 +84,8 @@
 
 .main-header__logo {
   @media (min-width: $width-tablet) {
-    width: 200px;
-    display: flex;
+    width: 250px;
+    display: inline-flex;
     justify-content: space-between;
     gap: 13px;
     align-items: baseline;
