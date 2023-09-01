@@ -76,6 +76,15 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media (min-width: $width-tablet) {
+    justify-content: flex-end;
+    gap: 55px;
+  }
+
+  @media (min-width: $width-desktop) {
+    justify-content: space-between;
+  }
 }
 
 .card__table-more {
