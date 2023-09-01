@@ -19,7 +19,7 @@ navToggle.addEventListener('click', function () {
 function initCatSlider() {
   const container = document.querySelector('.benefits-example__image-container');
   document.querySelector('.benefits-example__range-slider')?.addEventListener('input', (e) => {
-    container.style.setProperty('--persent', `${e.target.value}%`);
+    container.style.setProperty('--percent', `${e.target.value}%`);
     document.querySelector('output').innerHTML = `${e.target.value}%`;
   });
 }
