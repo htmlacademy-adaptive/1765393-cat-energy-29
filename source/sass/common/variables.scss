@@ -28,12 +28,14 @@ $outline-textarea: #e7e7e7;
 $outline-textarea-hover: #cdcdcd;
 $radio-input-hover: #bababa;
 $dark-grey: #444444;
+$special_grey-2: #666666;
 
 $error: #ff8282;
 
 $dark-grey-opacity: rgb(68, 68, 68, 0.3);
 $basic-white-opacity: rgba(255, 255, 255, 0.3);
-$basic-black-opacity: fade-out ($basic-black, 30%);
+$basic-black-opacity: rgb(0, 0, 0, 0.3);
+$basic-green-hover-opacity: rgb(94, 170, 47, 0.6);
 
 
 // Sizes
