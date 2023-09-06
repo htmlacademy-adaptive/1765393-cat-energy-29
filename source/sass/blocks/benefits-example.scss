@@ -13,7 +13,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    background-image: linear-gradient(to top, $bg-basic-grey 79%, $basic-white 79%);
+    background-image: linear-gradient(to top, $bg-basic-grey 75%, $basic-white 75%);
     padding-top: 70px;
     padding-bottom: 75px;
   }
@@ -44,8 +44,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    //background-color: $basic-grey;
-    padding: 2px 110px 75px;
+    padding: 2px 110px 0;
   }
 }
 
