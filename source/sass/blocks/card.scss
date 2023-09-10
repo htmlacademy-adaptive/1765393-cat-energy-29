@@ -36,6 +36,12 @@
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
+
+  @media (min-width: $width-tablet) {
+    border-bottom: 1px solid $outline-textarea-hover;
+    padding-bottom: 5px;
+    width: 100%;
+  }
 }
 
 .card__text--more {
@@ -70,6 +76,10 @@
     background-color: $basic-grey-hover;
     color: $dark-grey-opacity;
   }
+}
+
+.card__table {
+  width: 100%;
 }
 
 .card__table-add {
@@ -113,5 +123,25 @@
 .card__link--more {
   @media (min-width: $width-desktop) {
     grid-column: 1/2;
+  }
+}
+
+.card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+
+.card__image-link {
+  display: block;
+  width: 140px;
+  height: 100%;
+
+  @media (min-width: $width-tablet) {
+    width: 200px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 169px;
   }
 }
