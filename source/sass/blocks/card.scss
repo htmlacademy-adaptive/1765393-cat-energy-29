@@ -46,6 +46,7 @@
 
 .card__text--more {
   text-align: center;
+  border-bottom: none;
 }
 
 .card__text-more {
@@ -105,11 +106,13 @@
 
 .card--more {
   grid-template-columns: 1fr;
-  padding-top: 25px;
   background-image: none;
+  padding-top: 25px;
 
   @media (min-width: $width-tablet) {
     padding-top: 50px;
+    margin-top: 80px;
+    border: 2px solid $basic-grey;
   }
 }
 
