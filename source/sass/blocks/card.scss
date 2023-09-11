@@ -101,8 +101,11 @@
 .card__table-more {
   @media (min-width: $width-desktop) {
     grid-column: 2/3;
+    opacity: 1;
   }
 }
+
+
 
 .card--more {
   grid-template-columns: 1fr;
