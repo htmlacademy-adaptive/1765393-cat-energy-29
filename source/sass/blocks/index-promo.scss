@@ -86,6 +86,9 @@
 }
 
 .index-promo__image {
+  display: block;
+  max-width: none;
+
   @media (min-width: $width-tablet) {
     order: 4;
     width: 709px;
