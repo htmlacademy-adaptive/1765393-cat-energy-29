@@ -52,14 +52,6 @@
   height: $height-header; // Возможно надо удалить
   grid-column: 1/-1;
 
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-
   @media (min-width: $width-tablet) {
     padding-top: 25px;
     padding-bottom: 65px;
@@ -93,6 +85,14 @@
 }
 
 .main-header__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+  
   @media (min-width: $width-tablet) {
     max-width: 210px;
     display: inline-flex;
@@ -101,7 +101,7 @@
     align-items: baseline;
   }
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: $width-desktop) {
     gap: 14px;
   }
 }

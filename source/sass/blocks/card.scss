@@ -81,6 +81,7 @@
 
 .card__table {
   width: 100%;
+  border-collapse: collapse;
 }
 
 .card__table-add {
@@ -101,7 +102,6 @@
 .card__table-more {
   @media (min-width: $width-desktop) {
     grid-column: 2/3;
-    opacity: 1;
   }
 }
 
