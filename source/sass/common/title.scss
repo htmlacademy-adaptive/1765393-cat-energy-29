@@ -25,7 +25,6 @@
   }
 }
 
-
 .title--form-text {
   color: $basic-black;
   text-transform: uppercase;
@@ -45,5 +44,11 @@
 
   @media (min-width: $width-tablet) {
     text-align: start;
+    padding-bottom: 19px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-bottom: 0;
+    padding-top: 19px;
   }
 }

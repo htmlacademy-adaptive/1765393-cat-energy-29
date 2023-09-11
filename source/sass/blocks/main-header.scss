@@ -79,19 +79,29 @@
 
   @media (min-width: $width-tablet) {
     position: static;
+    align-self: center;
+    transform: none;
   }
 }
 
 .main-header__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $width-tablet) {
-    width: 200px;
-    display: flex;
+    max-width: 210px;
+    display: inline-flex;
     justify-content: space-between;
     gap: 13px;
     align-items: baseline;
   }
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: $width-desktop) {
     gap: 14px;
   }
 }

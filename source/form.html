@@ -5,25 +5,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт Энерджи. Питание для вашего кота</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
-  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"><!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
 
   <!-- Header -->
-
   <header class="main-header main-header--transparent">
-
     <div class="container main-header__container">
       <a class="main-header__logo" href="index.html" aria-current="page">
-        <img class="main-header__logo-image" src="img/logo-mobile.svg" width="33" height="38"
-          alt="Логотип сайта Кэт Энерджи.">
-        <img class="main-header__logo-text" src="img/logo-cat-text.svg" width="101" height="18"
-          alt="Текстовый логотип сайта Кэт Энерджи на английском.">
+        <picture>
+          <source media="(min-width: 1000px)" srcset="img/logo-desktop.svg" width="70" height="59">
+          <source media="(min-width: 500px)" srcset="img/logo-tablet.svg" width="60" height="50">
+          <img class="main-header__logo-image" src="img/logo-mobile.svg" width="33" height="38"
+            alt="Логотип сайта Кэт Энерджи.">
+        </picture>
+        <svg class="main-header__logo-text" width="101" height="20" role="img"
+          aria-label="Текстовый логотип сайта Кэт Энерджи на английском.">
+          <use xlink:href="img/sprite.svg#logo-cat-text" aria-hidden="true"></use>
+        </svg>
       </a>
 
       <nav class="main-navigation main-navigation--closed main-navigation--nojs">
@@ -33,22 +37,26 @@
 
         <div class="main-navigation__wrapper">
           <ul class="main-navigation__list site-list">
+
             <li class="site-list__item">
               <a class="site-list__link site-list__link-opacity" href="index.html">
                 Главная
               </a>
             </li>
+
             <li class="site-list__item">
-              <a class="site-list__link  site-list__link-opacity" href="catalog.html">
+              <a class="site-list__link site-list__link-opacity" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
+
             <li class="site-list__item site-list__item--current-form">
               <a class="site-list__link site-list__link-opacity site-list__link--current" href="form.html"
                 aria-current="page">
                 Подбор программы
               </a>
             </li>
+
           </ul>
         </div>
       </nav>
@@ -56,11 +64,11 @@
   </header>
 
   <!-- Main -->
-
   <main>
     <h1 class="container container--form title title--form">Подбор программы</h1>
-    <p class="container container--form title title--form-text">Заполните анкету, и мы подберем<br>программу питания для
-      вашего кота</p>
+    <p class="container container--form title title--form-text">
+      Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+
     <form class="filter-program filter-program--filter-container" action="https://echo.htmlacademy.ru/" method="post">
 
       <fieldset class="container container--form filter-program filter-program--padding-name">
@@ -83,6 +91,7 @@
           <input class="filter-program__text filter-program__input-text" type="number" name="age" id="age"
             placeholder="Укажите возраст" value="7">
         </label>
+
       </fieldset>
 
       <fieldset class="filter-program line filter-program--padding-program">
@@ -92,7 +101,7 @@
           <li class="filter-program__item filter-program__item--radio">
             <label class="control">
               <input class="filter-program__text input radio-input control__input" type="radio" name="program-type"
-                value="weight-loss" checked>
+                value="weight-loss" checked="checked">
               Похудение
             </label>
           </li>
@@ -148,7 +157,8 @@
       <fieldset class="container container--form filter-program filter-program--comment">
         <legend class="filter-program__title">Комментарий</legend>
         <textarea class="filter-program__wrapper" name="comment" id="form-text"
-          placeholder="Расскажите обо всех повадках кота"></textarea>
+          placeholder="Расскажите обо всех повадках кота">
+        </textarea>
       </fieldset>
 
       <fieldset class="container container--form filter-program filter-program--extra">
@@ -157,28 +167,28 @@
 
           <li class="filter-program__item-checkbox">
             <label class="control check">
-              <input class="filter-program__text control__input" type="checkbox" name="sweetener" checked>
+              <input class="filter-program__text checkbox-input" type="checkbox" name="sweetener" checked="checked">
               Сахарозаменитель
             </label>
           </li>
 
           <li class="filter-program__item-checkbox">
             <label class="control">
-              <input class="filter-program__text control__input" type="checkbox" name="water">
+              <input class="filter-program__text checkbox-input" type="checkbox" name="water">
               Питьевая вода
             </label>
           </li>
 
           <li class="filter-program__item-checkbox">
             <label class="control">
-              <input class="filter-program__text control__input" type="checkbox" name="milk">
+              <input class="filter-program__text checkbox-input" type="checkbox" name="milk">
               Молоко
             </label>
           </li>
 
           <li class="filter-program__item-checkbox">
             <label class="control">
-              <input class="filter-program__text control__input" type="checkbox" name="vitamins">
+              <input class="filter-program__text checkbox-input" type="checkbox" name="vitamins">
               Витамины
             </label>
           </li>
@@ -188,25 +198,26 @@
 
       <section class="container container--form filter-program__send">
         <h2 class="visually-hidden">Отправить форму</h2>
-        <button class="button button--filter" type="submit">Отправить заявку</button>
+        <button class="button button--filter" type="submit">
+          Отправить заявку
+        </button>
         <p class="title title--filter">* — Обязательные поля</p>
       </section>
-
     </form>
+
   </main>
 
   <!-- Footer -->
-
   <footer class="main-footer">
-
     <section class="location">
+
       <div class="container container--form location__wrapper location__wrapper-opaque">
         <h2 class="visually-hidden">Адрес компании</h2>
         <p class="location__dealers">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
         <address class="location__address">
           <a class="location__address-link" href="https://goo.gl/maps/kggcqB526bwkJZaEA">
-            <p class="location__address-text">ул. Большая Конюшенная, д.&nbsp;19/8<span
-                class="location__address-text location__address-text--padding">Санкт-Петербург</span>
+            <p class="location__address-text">ул. Большая Конюшенная, д.&nbsp;19/8
+              <span class="location__address-text location__address-text--padding">Санкт-Петербург</span>
             </p>
           </a>
         </address>
@@ -218,15 +229,29 @@
         title="Офис компании по адресу ул. Большая Конюшенная, д.19/8, Санкт-Петербург">
       </iframe>
       <a class="location__link-map" href="https://goo.gl/maps/kggcqB526bwkJZaEA">
-        <img class="location__map-image" src="img/map.png" width="320" height="362"
-          alt="Карта с местностью расположения компании.">
+        <picture>
+          <source type="image/webp" media="(min-width: 1000px)"
+            srcset="img/map-desktop.webp, img/map-desktop@2x.webp 2x" width="1440" height="400">
+          <source type="image/webp" media="(min-width: 500px)" srcset="img/map-tablet.webp, img/map-tablet@2x.webp 2x"
+            width="768" height="400">
+          <source type="image/webp" srcset="img/map-mobile.webp, img/map-mobile@2x.webp 2x" width="320" height="362">
+
+          <source media="(min-width: 1000px)" srcset="img/map-desktop.png, img/map-desktop@2x.png 2x" width="1440"
+            height="400">
+          <source media="(min-width: 500px)" srcset="img/map-tablet.png, img/map-tablet@2x.png 2x" width="768"
+            height="400">
+          <img class="location__map-image" src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" width="320"
+            height="362" alt="Карта с местностью расположения компании.">
+        </picture>
       </a>
     </section>
 
     <div class="container container--form main-footer__wrapper">
       <a class="main-footer__logo" href="index.html" aria-current="page">
-        <img class="main-footer__logo-image-text" src="img/logo-cat-text.svg" width="128" height="24"
-          alt="Текстовый логотип сайта Кэт Энерджи на английском.">
+        <svg class="main-footer__logo-image-text" width="128" height="24" role="img"
+          aria-label="Текстовый логотип сайта Кэт Энерджи на английском.">
+          <use xlink:href="img/sprite.svg#logo-cat-text" aria-hidden="true"></use>
+        </svg>
       </a>
 
       <section class="footer-social">
@@ -256,10 +281,11 @@
 
       <div class="main-footer__academy">
         <a class="main-footer__academy-link">
-          <span class="main-footer__academy-text">HTML Academy</span>
-          <img class="main-footer__academy-image" src="img/logo-html.svg" width="27" height="34" alt="Иконка логотипа.">
+          <span class="main-footer__academy-text" lang="en">HTML Academy</span>
+          <div class="main-footer__academy-image"></div>
         </a>
       </div>
+
     </div>
   </footer>
   <script src="js/script.js"></script>

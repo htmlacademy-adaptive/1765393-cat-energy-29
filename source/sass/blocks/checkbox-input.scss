@@ -1,0 +1,45 @@
+@use "../common/mixins" as *;
+@use "../common/variables" as *;
+
+.checkbox-input[type="checkbox"] {
+  border: 1px solid $outline-textarea-hover;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    border: 1px solid $radio-input-hover;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  &:checked {
+    background-image: url("../img/icon/tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 26px 26px;
+
+    &:hover,
+    &:active {
+      border: 1px solid $radio-input-hover;
+    }
+
+    &:disabled {
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: $width-tablet) {
+    width: 40px;
+    height: 40px;
+
+    &:checked {
+      background-position: center top 3px;
+    }
+  }
+}

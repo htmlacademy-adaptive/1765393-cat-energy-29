@@ -103,29 +103,3 @@
 .benefits__item--watch::before {
   background-image: url("../img/icon/watch.svg");
 }
-
-.benefits--example {
-  background-color: $bg-basic-grey;
-
-  @media (min-width: $width-tablet) {
-    background-image: linear-gradient(to top, $bg-basic-grey 40%, $basic-white 40%);
-  }
-
-  @media (min-width: $width-desktop) {
-    background-image: linear-gradient(to top, $bg-basic-grey 70%, $basic-white 70%);
-  }
-}
-
-.benefits--example::before {
-  @media (min-width: $width-tablet) {
-    content: "";
-    display: block;
-    box-shadow: 0 0 0 1px $line-grey;
-    width: 100%;
-    margin-bottom: 45px;
-  }
-
-  @media (min-width: $width-desktop) {
-    display: none;
-  }
-}

@@ -58,13 +58,22 @@
 }
 
 .filter-program__list--radio {
+  margin: 0;
+  padding: 22px 20px 19px;
+
   @media (min-width: $width-tablet) {
     outline: 1px solid $line-grey;
-    padding: 27px;
+    padding: 23px 27px 27px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 25px 28px 25px;
   }
 }
 
 .filter-program__list--checkbox {
+  padding-left: 0;
+
   @media (min-width: $width-tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -164,6 +173,11 @@
 .filter-program__item--radio,
 .filter-program__item-checkbox {
   text-transform: uppercase;
+
+
+  &:not(:last-child) {
+    padding-bottom: 13px; //надо поменять
+  }
 }
 
 .filter-program__wrapper {
