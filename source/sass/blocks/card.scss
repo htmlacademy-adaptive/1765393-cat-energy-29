@@ -109,11 +109,37 @@
   grid-template-columns: 1fr;
   background-image: none;
   padding-top: 25px;
+  display: grid;
+  place-items: center;
+  row-gap: 3px;
+
+  &::after,
+  &::before {
+    content: "";
+    grid-area: 1/1/2/2;
+    width: 30px;
+    height: 2px;
+    background-color: $plus;
+
+    @media (min-width: $width-tablet) {
+      width: 60px;
+    }
+  }
+
+  &::before {
+    transform: rotate(90deg);
+  }
 
   @media (min-width: $width-tablet) {
     padding-top: 50px;
     margin-top: 80px;
+    row-gap: 16px;
     border: 2px solid $basic-grey;
+    grid-template-rows: 60px max-content 1fr;
+  }
+
+  @media (min-width: $width-desktop) {
+    row-gap: 21px;
   }
 }
 
