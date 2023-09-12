@@ -70,6 +70,10 @@
   line-height: 24px;
   text-transform: uppercase;
   color: $basic-black;
+
+  @media (min-width: $width-desktop) {
+    padding: 15px 6px 0;
+  }
 }
 
 .benefits-example__description {
@@ -104,12 +108,17 @@
 
   @media (min-width: $width-tablet) {
     text-align: end;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
   }
 
   @media (min-width: $width-desktop) {
     text-align: start;
     grid-column: 1/2;
     grid-row: 3/4;
+    flex-direction: row;
+    gap: 63px;
   }
 }
 
@@ -171,7 +180,7 @@
   pointer-events: none;
 
   &::after {
-    content: "❮ ❯";
+    content: "";
     flex-shrink: 0;
     display: flex;
     justify-content: center;
@@ -186,6 +195,20 @@
     color: $special_grey-2;
     background-color: $basic-white;
     padding-bottom: 4px;
+    margin-left: -22px;
+  }
+
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 18px;
+    background-color: $special_grey-2;
+    mask-image: url("../img/sprite.svg#range");
+    transform: translate(42%, 1%);
   }
 }
 
@@ -193,6 +216,10 @@
   color: $basic-green-hover;
   border: 2px solid $basic-green-hover;
   background-color: $basic-white;
+}
+
+.benefits-example__range-slider:hover + .benefits-example__range-slider-style::before {
+  background-color: $basic-green-hover;
 }
 
 .benefits-example__range-slider:hover + .benefits-example__range-slider-style {
@@ -203,6 +230,10 @@
   color: $basic-green-hover-opacity;
   border: 2px solid $basic-green-hover-opacity;
   background-color: $basic-white;
+}
+
+.benefits-example__range-slider:active + .benefits-example__range-slider-style::before {
+  background-color: $basic-green-hover-opacity;
 }
 
 .benefits-example__range-slider:active + .benefits-example__range-slider-style {
@@ -241,7 +272,6 @@
 .benefits-example__item {
   outline: 1px solid $line-grey;
   border-radius: 3px;
-  padding: 15px 8px 18px;
   min-width: 124px;
   text-align: center;
   align-items: center;
@@ -250,5 +280,6 @@
   @media (min-width: $width-tablet) {
     padding: 15px 15px 20px;
     min-width: 162px;
+    height: 72px;
   }
 }
