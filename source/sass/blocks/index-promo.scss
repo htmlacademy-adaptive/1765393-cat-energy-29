@@ -64,6 +64,7 @@
 
   @media (min-width: $width-desktop) {
     grid-column: 1/-1;
+    margin-top: 15px;
   }
 }
 
@@ -83,6 +84,7 @@
   @media (min-width: $width-desktop) {
     position: static;
     grid-column: 1/-1;
+    padding: 18px 26px;
   }
 }
 
@@ -103,7 +105,7 @@
     height: 499px;
     position: absolute;
     top: 143px;
-    left: 40%;
+    left: 40.1%;
     margin: 0;
   }
 }
