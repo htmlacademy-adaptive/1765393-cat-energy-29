@@ -1,0 +1,21 @@
+{
+  "name": "Cat Energy",
+  "icons": [
+    {
+      "src": "img/favicons/android-icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "density": "4.0"
+    },
+    {
+      "src": "img/favicons/android-chrome-512x5212.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "img/favicons/apple-icon-180x180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    }
+  ]
+}
