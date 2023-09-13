@@ -75,17 +75,20 @@
 
 .index-promo__button {
   width: 100%;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 11px 26px;
+  margin-top: -20px;
 
   @media (min-width: $width-tablet) {
     width: 244px;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 26px;
     position: absolute;
     top: 371px;
     right: calc(50% + 21px);
     padding: 17px 26px;
+    margin-top: 0;
   }
 
   @media (min-width: $width-desktop) {
