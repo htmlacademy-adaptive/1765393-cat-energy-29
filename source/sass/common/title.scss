@@ -28,8 +28,13 @@
 .title--form-text {
   color: $basic-black;
   text-transform: uppercase;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   @media (min-width: $width-desktop) {
     padding-bottom: 66px;
