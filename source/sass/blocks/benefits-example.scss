@@ -13,9 +13,9 @@
   }
 
   @media (min-width: $width-desktop) {
-    background-image: linear-gradient(to top, $bg-basic-grey 75%, $basic-white 75%);
-    padding-top: 70px;
-    padding-bottom: 75px;
+    background-image: linear-gradient(to top, $bg-basic-grey 71%, $basic-white 71%);
+    padding-top: 57px;
+    padding-bottom: 54px;
   }
 }
 
@@ -62,6 +62,7 @@
   @media (min-width: $width-desktop) {
     grid-template-columns: 1/2;
     grid-template-rows: 2/3;
+    margin-top: 69px;
   }
 }
 
@@ -72,7 +73,9 @@
   color: $basic-black;
 
   @media (min-width: $width-desktop) {
-    padding: 15px 6px 0;
+    padding: 0 6px;
+    font-size: 30px;
+    line-height: 37px;
   }
 }
 
@@ -111,6 +114,7 @@
     display: flex;
     flex-direction: column;
     gap: 9px;
+    font-size: 20px;
   }
 
   @media (min-width: $width-desktop) {
@@ -119,6 +123,7 @@
     grid-row: 3/4;
     flex-direction: row;
     gap: 63px;
+    padding-top: 24px;
   }
 }
 
@@ -136,10 +141,9 @@
   }
 
   @media (min-width: $width-desktop) {
-    margin: 0 auto;
+    margin: -138px auto 0 51px;
     grid-column: 2/3;
     grid-row: 1/4;
-    margin-top: -165px;
   }
 }
 
@@ -210,6 +214,10 @@
     mask-image: url("../img/sprite.svg#range");
     transform: translate(42%, 1%);
   }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 30px;
+  }
 }
 
 .benefits-example__range-slider:hover + .benefits-example__range-slider-style::after {
@@ -254,6 +262,8 @@
   @media (min-width: $width-desktop) {
     grid-column: 1/2;
     margin: 0;
+    margin-top: 68px;
+    padding-right: 176px;
   }
 }
 
@@ -261,6 +271,11 @@
   font-size: 36px;
   line-height: 40px;
   margin-bottom: 40px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 
   @media (min-width: $width-desktop) {
     padding: 0 110px 76px;

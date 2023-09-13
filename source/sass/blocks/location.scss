@@ -31,6 +31,8 @@
 
   @media (min-width: $width-tablet) {
     padding: 60px 70px;
+    font-size: 20px;
+    line-height: 26px;
   }
 
   @media (min-width: $width-desktop) {
@@ -39,6 +41,7 @@
     width: 565px;
     background-color: $basic-white;
     margin: 95px 110px 106px;
+    padding: 60px 80px;
     z-index: 2;
   }
 }
@@ -57,6 +60,11 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $width-tablet) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .location__address-text {
@@ -77,6 +85,14 @@
 
   @media (min-width: $width-desktop) {
     text-align: start;
+    padding-left: 48px;
+  }
+}
+
+.location__address-text--padding {
+  @media (min-width: $width-desktop) {
+    text-align: start;
+    padding-left: 0;
   }
 }
 

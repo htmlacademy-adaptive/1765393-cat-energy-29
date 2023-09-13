@@ -42,11 +42,13 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
+    padding-left: 30px;
   }
 
   @media (min-width: $width-desktop) {
     margin-top: 70px;
     grid-column: 1/-1;
+    padding-left: 0;
   }
 }
 
@@ -60,10 +62,14 @@
     color: $basic-black;
     font-size: 20px;
     line-height: 20px;
+    margin-top: 10px;
+    padding-left: 30px;
   }
 
   @media (min-width: $width-desktop) {
     grid-column: 1/-1;
+    margin-top: 15px;
+    padding-left: 0;
   }
 }
 
@@ -77,12 +83,15 @@
     font-size: 20px;
     line-height: 20px;
     position: absolute;
-    top: 347px;
+    top: 371px;
+    right: calc(50% + 21px);
+    padding: 17px 26px;
   }
 
   @media (min-width: $width-desktop) {
     position: static;
     grid-column: 1/-1;
+    padding: 18px 26px;
   }
 }
 
@@ -94,8 +103,8 @@
     order: 4;
     width: 709px;
     height: 609px;
-    margin-left: -84px;
-    margin-top: -10px;
+    margin-left: -60px;
+    margin-top: -3px;
   }
 
   @media (min-width: $width-desktop) {
@@ -103,7 +112,7 @@
     height: 499px;
     position: absolute;
     top: 143px;
-    left: 40%;
+    left: calc(50% - 163px);
     margin: 0;
   }
 }

@@ -43,12 +43,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 93px; //+38px карта
+    padding-top: 93px;
     padding-bottom: 55px;
   }
 
   @media (min-width: $width-desktop) {
-    padding-top: 104px; //+38px карта
+    padding-top: 56px;
     padding-bottom: 66px;
   }
 }

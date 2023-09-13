@@ -8,6 +8,10 @@
   gap: 24px;
   margin: 0;
   padding: 20px;
+
+  @media (min-width: $width-desktop) {
+    margin-left: 35px;
+  }
 }
 
 .footer-social::after {
