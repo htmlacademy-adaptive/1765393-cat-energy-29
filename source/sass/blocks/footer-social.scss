@@ -9,8 +9,14 @@
   margin: 0;
   padding: 20px;
 
+  @media (min-width: $width-tablet) {
+    margin-left: 32px;
+    margin-top: -12px;
+  }
+
   @media (min-width: $width-desktop) {
     margin-left: 35px;
+    margin-top: 2px;
   }
 }
 

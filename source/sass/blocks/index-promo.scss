@@ -87,14 +87,14 @@
     position: absolute;
     top: 371px;
     right: calc(50% + 21px);
-    padding: 17px 26px;
+    padding: 14px 26px;
     margin-top: 0;
   }
 
   @media (min-width: $width-desktop) {
     position: static;
     grid-column: 1/-1;
-    padding: 18px 26px;
+    padding: 15px 26px;
   }
 }
 

@@ -32,6 +32,10 @@
 
 .main-footer__logo {
   align-items: center;
+
+  @media (min-width: $width-tablet) {
+    margin-top: -10px;
+  }
 }
 
 .main-footer__wrapper {
@@ -44,12 +48,12 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 93px;
-    padding-bottom: 55px;
+    padding-bottom: 42px;
   }
 
   @media (min-width: $width-desktop) {
     padding-top: 56px;
-    padding-bottom: 66px;
+    padding-bottom: 53px;
   }
 }
 
@@ -60,6 +64,10 @@
 
   &:active {
     stroke: $cat-energy-active;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 10px;
   }
 }
 
