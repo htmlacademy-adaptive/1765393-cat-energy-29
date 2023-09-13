@@ -10,6 +10,8 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"><!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -504,7 +506,7 @@
           <source media="(min-width: 500px)" srcset="img/map-tablet.png, img/map-tablet@2x.png 2x" width="768"
             height="400">
           <img class="location__map-image" src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" width="320"
-            height="362" alt="Карта с местностью расположения компании.">
+            height="362" loading="lazy" alt="Карта с местностью расположения компании.">
         </picture>
       </a>
     </section>
