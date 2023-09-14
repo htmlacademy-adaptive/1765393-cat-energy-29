@@ -96,7 +96,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 0;
-    margin: 0;
+    margin: -20px 30px -30px 0;
+    gap: 0;
   }
 }
 
@@ -108,6 +109,12 @@
     padding-right: 0;
     padding-top: 63px;
     padding-bottom: 51px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -167,7 +174,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    padding-bottom: 57px;
+    padding-top: 0;
   }
 }
 
@@ -183,12 +190,15 @@
   background-color: $basic-green;
   z-index: -1;
   box-shadow: 100vw 0 0 0 $basic-green;
+
+  @media (min-width: $width-desktop) {
+    top: calc(50% - 13px);
+  }
 }
 
 .filter-program__item--radio,
 .filter-program__item-checkbox {
   text-transform: uppercase;
-
 
   &:not(:last-child) {
     padding-bottom: 13px; //надо поменять
@@ -251,9 +261,10 @@
   @media (min-width: $width-desktop) {
     grid-column: 1/-1;
     padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 44px;
     gap: 80px;
     align-items: start;
-    padding-right: 0;
   }
 }
 
@@ -264,7 +275,7 @@
   @media (min-width: $width-desktop) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 70px 80px;
     align-items: start;
     padding-right: 0;
   }
