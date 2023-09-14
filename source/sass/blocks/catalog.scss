@@ -16,6 +16,8 @@
     border-bottom: none;
     padding-top: 0;
     padding-bottom: 84px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
@@ -63,8 +65,11 @@
   }
 
   @media (min-width: $width-tablet) {
-    margin: 0 30px;
+    margin: 69px 30px 5px;
+    padding-top: 0;
+    padding-left: 0;
     background-image: url("../img/catalog/gift-cat-tablet.png");
+    height: 200px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/catalog/gift-cat-tablet@2x.png");
@@ -102,6 +107,10 @@
 }
 
 .catalog__section {
+  @media (min-width: $width-tablet) {
+    margin-bottom: 80px;
+  }
+
   @media (min-width: $width-desktop) {
     display: grid;
     grid-template-columns: 1fr min-content;
