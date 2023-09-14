@@ -25,12 +25,13 @@
 .location__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 26px;
+  padding-top: 23px;
   padding-bottom: 26px;
   background-color: $basic-white;
 
   @media (min-width: $width-tablet) {
-    padding: 60px 70px;
+    padding: 61px 70px;
+    margin-top: -5px;
     font-size: 20px;
     line-height: 26px;
   }
@@ -79,20 +80,26 @@
   flex-direction: column;
 
   @media (min-width: $width-tablet) {
-    gap: 19px;
+    margin-top: -1px;
     text-align: end;
+    font-size: 16px;
   }
 
   @media (min-width: $width-desktop) {
     text-align: start;
-    padding-left: 48px;
+    padding-left: 45px;
   }
 }
 
 .location__address-text--padding {
+  @media (min-width: $width-tablet) {
+    margin-top: 19px;
+  }
+
   @media (min-width: $width-desktop) {
     text-align: start;
     padding-left: 0;
+    margin-top: 21px;
   }
 }
 

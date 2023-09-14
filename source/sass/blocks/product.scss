@@ -37,6 +37,7 @@
   border-radius: 50%;
   position: relative;
   margin-right: 20px;
+  margin-top: 2px;
 
   @media (min-width: $width-tablet) {
     width: 200px;
@@ -45,6 +46,7 @@
     grid-row: 1/4;
     position: static;
     margin-right: 0;
+    margin-top: 0;
   }
 
   @media (min-width: $width-desktop) {
@@ -80,11 +82,12 @@
   background-image: url("../img/sprite.svg#cat-slim");
   width: 36px;
   height: 50px;
-  transform: translate(21%, -6%);
+  transform: translate(17%, -173%);
 
   @media (min-width: $width-tablet) {
     width: 140px;
     height: 194px;
+    transform: translate(21%, -9%);
   }
 
   @media (min-width: $width-desktop) {
@@ -97,12 +100,12 @@
   background-image: url("../img/sprite.svg#cat-pro");
   width: 67px;
   height: 28px;
-  transform: translate(-14%, 37%);
+  transform: translate(-13%, -302%);
 
   @media (min-width: $width-tablet) {
     width: 268px;
     height: 112px;
-    transform: translate(-14%, -1%);
+    transform: translate(-13%, -3%);
   }
 
   @media (min-width: $width-desktop) {
@@ -116,12 +119,14 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  margin-top: 4px;
 
   @media (min-width: $width-tablet) {
     grid-column: 1/2;
     grid-row: 1/2;
     font-size: 36px;
     line-height: 36px;
+    margin-top: 0;
   }
 
   @media (min-width: $width-desktop) {
@@ -133,6 +138,7 @@
 .product__desc {
   font-family: var(--font-secondary);
   margin-bottom: 20px;
+  margin-top: 25px;
   grid-column: 1/-1;
 
   @media (min-width: $width-tablet) {

@@ -24,7 +24,7 @@
   position: relative;
 
   .filter-program__input-text {
-    padding: 14px;
+    padding: 11px;
     outline: 1px solid $outline-textarea;
     border: none;
   }
@@ -59,7 +59,7 @@
 
 .filter-program__list--radio {
   margin: 0;
-  padding: 22px 20px 19px;
+  padding: 9px 20px 4px;
 
   @media (min-width: $width-tablet) {
     outline: 1px solid $line-grey;
@@ -73,6 +73,7 @@
 
 .filter-program__list--checkbox {
   padding-left: 0;
+  margin-top: -2px;
 
   @media (min-width: $width-tablet) {
     display: grid;
@@ -89,7 +90,7 @@
 
 .filter-program--padding-name {
   padding-top: 39px;
-  padding-bottom: 24px;
+  padding-bottom: 8px;
 
   @media (min-width: $width-desktop) {
     padding-right: 0;
@@ -129,14 +130,14 @@
   --padding-form: 20px;
 
   color: $basic-black;
+  background-color: $basic-white;
   font-size: 24px;
   line-height: 26px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  background-color: $basic-white;
+  padding-top: 14px;
   padding-left: var(--padding-form);
   padding-right: var(--padding-form);
   margin-inline: -20px;
+  margin-bottom: 28px;
   position: relative;
 
   @media (min-width: $width-tablet) {
@@ -215,10 +216,10 @@
 .filter-program__send {
   display: flex;
   flex-wrap: wrap;
-  gap: 21px;
   flex-direction: column;
-  padding-top: 34px;
-  padding-bottom: 32px;
+  padding-top: 0;
+  padding-bottom: 35px;
+  margin-top: -2px;
   align-items: center;
   width: 100%;
 
@@ -253,6 +254,9 @@
 }
 
 .filter-program--comment {
+  margin-top: -9px;
+  margin-bottom: -11px;
+
   @media (min-width: $width-desktop) {
     grid-column: 1/-1;
   }
