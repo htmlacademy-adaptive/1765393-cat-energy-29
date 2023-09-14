@@ -13,19 +13,19 @@
   margin: 0;
   list-style-type: none;
   display: grid;
-  gap: 25px;
   grid-template-columns: 1fr;
 
   @media (min-width: $width-tablet) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    gap: 64px 60px;
     padding: 0 30px;
   }
 
   @media (min-width: $width-desktop) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
+    gap: 64px 80px;
     padding: 0 110px;
+    margin-right: 20px;
   }
 }
 
@@ -43,7 +43,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-image: linear-gradient(to bottom, $basic-white 81px, $basic-grey 81px);
+    background-image: linear-gradient(to bottom, $basic-white 76px, $basic-grey 76px);
+  }
+
+  @media (min-width: $width-desktop) {
+    background-image: linear-gradient(to bottom, $basic-white 83px, $basic-grey 83px);
   }
 }
 

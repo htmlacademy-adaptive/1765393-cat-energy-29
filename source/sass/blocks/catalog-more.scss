@@ -1,6 +1,20 @@
 @use "../common/mixins" as *;
 @use "../common/variables" as *;
 
+.catalog-more {
+  margin-top: 30px;
+
+  @media (min-width: $width-tablet) {
+    margin-top: 69px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 43px;
+    width: 896px;
+    margin-left: 0;
+  }
+}
+
 .catalog-more__title {
   --padding-form: 20px;
 
@@ -12,6 +26,7 @@
   padding-left: var(--padding-form);
   padding-right: var(--padding-form);
   margin-inline: -20px;
+  margin-bottom: 33px;
   background-color: $basic-white;
   width: fit-content;
 
@@ -20,6 +35,8 @@
 
     margin-inline: 0;
     border-bottom: none;
+    font-size: 36px;
+    line-height: 36px;
   }
 
   @media (min-width: $width-desktop) {
@@ -46,9 +63,11 @@
   display: grid;
   gap: 20px;
   padding: 0;
+  margin-top: 56px;
 
   @media (min-width: $width-tablet) {
     gap: 0;
+    margin-top: 80px;
   }
 
   @media (min-width: $width-desktop) {
@@ -69,9 +88,9 @@
   }
 
   @media (min-width: $width-desktop) {
-    grid-template-columns: 325px 285px 1fr;
-    gap: 17px;
-    padding: 15px 0 17px;
+    grid-template-columns: 293px 285px 1fr;
+    gap: 37px;
+    padding: 0 0;
     border-left: none;
     border-right: none;
     border-bottom: 1px solid $line-grey;
