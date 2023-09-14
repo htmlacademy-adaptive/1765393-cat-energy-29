@@ -37,6 +37,11 @@
     width: 70%;
     margin-top: 21px;
   }
+
+  @media (min-width: $width-desktop) {
+    width: 90%;
+    margin-top: 11px;
+  }
 }
 
 .card__title-more {
@@ -129,6 +134,10 @@
   @media (min-width: $width-tablet) {
     margin-top: -3px;
   }
+
+  @media (min-width: $width-tablet) {
+    margin-top: 4px;
+  }
 }
 
 .card__table-add {
@@ -197,6 +206,7 @@
   @media (min-width: $width-desktop) {
     width: 244px;
     grid-column: 3/4;
+    margin-top: 10px;
   }
 }
 
@@ -205,6 +215,7 @@
 
   @media (min-width: $width-desktop) {
     grid-column: 1/2;
+    margin-top: 0;
   }
 }
 

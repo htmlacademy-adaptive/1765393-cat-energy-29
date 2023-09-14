@@ -77,11 +77,9 @@
   }
 
   @media (min-width: $width-desktop) {
-    margin: 0;
-    margin-top: 67px;
-    margin-right: 110px;
-    min-width: 245px;
-    height: 383px;
+    margin: 189px 110px -8px -30px;
+    height: 288px;
+    width: 245px;
     background-image: url("../img/catalog/gift-cat-desktop.png");
 
     @media (min-resolution: 2dppx) {
@@ -103,6 +101,7 @@
     grid-column: 1/-1;
     text-align: center;
     margin: 0 auto;
+    margin-top: -15px;
   }
 }
 
@@ -115,6 +114,7 @@
     display: grid;
     grid-template-columns: 1fr min-content;
     margin: 0 auto;
+    margin-bottom: 86px;
     max-width: $width-max;
   }
 }

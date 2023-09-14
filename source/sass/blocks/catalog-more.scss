@@ -7,6 +7,12 @@
   @media (min-width: $width-tablet) {
     margin-top: 69px;
   }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 43px;
+    width: 896px;
+    margin-left: 0;
+  }
 }
 
 .catalog-more__title {
@@ -82,9 +88,9 @@
   }
 
   @media (min-width: $width-desktop) {
-    grid-template-columns: 325px 285px 1fr;
-    gap: 17px;
-    padding: 15px 0 17px;
+    grid-template-columns: 293px 285px 1fr;
+    gap: 37px;
+    padding: 0 0;
     border-left: none;
     border-right: none;
     border-bottom: 1px solid $line-grey;
