@@ -1,6 +1,10 @@
 @use "../common/mixins" as *;
 @use "../common/variables" as *;
 
+.catalog-more {
+  margin-top: 30px;
+}
+
 .catalog-more__title {
   --padding-form: 20px;
 
@@ -12,6 +16,7 @@
   padding-left: var(--padding-form);
   padding-right: var(--padding-form);
   margin-inline: -20px;
+  margin-bottom: 33px;
   background-color: $basic-white;
   width: fit-content;
 
@@ -46,6 +51,7 @@
   display: grid;
   gap: 20px;
   padding: 0;
+  margin-top: 56px;
 
   @media (min-width: $width-tablet) {
     gap: 0;

@@ -13,7 +13,7 @@
   margin: 0;
   list-style-type: none;
   display: grid;
-  gap: 25px;
+  //gap: 25px;
   grid-template-columns: 1fr;
 
   @media (min-width: $width-tablet) {
@@ -45,6 +45,10 @@
     justify-content: space-between;
     background-image: linear-gradient(to bottom, $basic-white 81px, $basic-grey 81px);
   }
+}
+
+.catalog-product__item--big {
+  //margin-top: -25px;
 }
 
 .catalog-product__container {
