@@ -51,8 +51,10 @@
   height: 22px;
   list-style-type: none;
   background-color: $special_grey-2;
+  display: flex;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $basic-green;
   }
 
@@ -71,4 +73,8 @@
 
 .footer-social__item--telegram {
   mask-image: url("../img/sprite.svg#telegram");
+}
+
+.footer-social__link {
+  list-style-type: none;
 }
