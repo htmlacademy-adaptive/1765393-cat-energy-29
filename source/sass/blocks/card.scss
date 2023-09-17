@@ -78,10 +78,15 @@
 .card__text--more {
   text-align: center;
   border-bottom: none;
+  margin-bottom: 18px;
 
   @media (min-width: $width-tablet) {
     width: 90%;
-    margin-top: -17px;
+    margin-top: -25px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 100%;
   }
 }
 
@@ -108,7 +113,11 @@
   padding: 11px 26px;
 
   @media (min-width: $width-tablet) {
-    margin-top: 15px;
+    margin-top: 8px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 17px;
   }
 }
 
@@ -196,7 +205,9 @@
   }
 
   @media (min-width: $width-desktop) {
-    row-gap: 21px;
+    row-gap: 18px;
+    padding-top: 62px;
+    margin-top: 82px;
   }
 }
 

@@ -6,17 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт Энерджи. Питание для вашего кота</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"><!-- 180×180 -->
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
-
-  <!-- Header -->
   <header class="main-header main-header--transparent">
     <div class="container main-header__container">
       <a class="main-header__logo" href="index.html" aria-current="page">
@@ -31,75 +29,59 @@
           <use xlink:href="img/sprite.svg#logo-cat-text" aria-hidden="true"></use>
         </svg>
       </a>
-
       <nav class="main-navigation main-navigation--closed main-navigation--nojs">
         <button class="button main-navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-
         <div class="main-navigation__wrapper">
           <ul class="main-navigation__list site-list">
-
             <li class="site-list__item">
               <a class="site-list__link site-list__link-opacity" href="index.html">
                 Главная
               </a>
             </li>
-
             <li class="site-list__item">
               <a class="site-list__link site-list__link-opacity" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
-
             <li class="site-list__item site-list__item--current-form">
               <a class="site-list__link site-list__link-opacity site-list__link--current" href="form.html"
                 aria-current="page">
                 Подбор программы
               </a>
             </li>
-
           </ul>
         </div>
       </nav>
     </div>
   </header>
-
-  <!-- Main -->
   <main>
     <h1 class="container container--form title title--form">Подбор программы</h1>
     <p class="container container--form title title--form-text">
       Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
-
     <form class="filter-program filter-program--filter-container" action="https://echo.htmlacademy.ru/" method="post">
-
       <fieldset class="container container--form filter-program filter-program--padding-name">
         <legend class="visually-hidden">Введите данные кота</legend>
-
         <label class="filter-program__input">
           <span class="filter-program__text">Имя:<sup>*</sup></span>
           <input class="filter-program__text filter-program__input-text" type="text" name="name-cat" id="name"
             placeholder="Укажите имя" value="Барсик" required>
         </label>
-
         <label class="filter-program__input">
           <span class="filter-program__text">Вес&nbsp;(кг):<sup>*</sup></span>
           <input class="filter-program__text filter-program__input-text" type="number" name="weight" id="weight"
             placeholder="Укажите вес" value="7" required>
         </label>
-
         <label class="filter-program__input">
           <span class="filter-program__text">Возраст&nbsp;(лет):</span>
           <input class="filter-program__text filter-program__input-text" type="number" name="age" id="age"
             placeholder="Укажите возраст" value="7">
         </label>
-
       </fieldset>
-
       <fieldset class="filter-program line filter-program--padding-program">
         <legend class="visually-hidden">Выбор программы</legend>
         <ul class="filter-program__list filter-program__list--radio">
-
           <li class="filter-program__item filter-program__item--radio">
             <label class="control">
               <input class="filter-program__text input radio-input control__input" type="radio" name="program-type"
@@ -107,7 +89,6 @@
               Похудение
             </label>
           </li>
-
           <li class="filter-program__item filter-program__item--radio">
             <label class="control">
               <input class="filter-program__text input radio-input control__input" type="radio" name="program-type"
@@ -115,7 +96,6 @@
               Набор массы
             </label>
           </li>
-
           <li class="filter-program__item filter-program__item--radio">
             <label class="control">
               <input class="filter-program__text input radio-input control__input" type="radio" name="program-type"
@@ -123,13 +103,10 @@
               Не знаю (нужен ваш совет)
             </label>
           </li>
-
         </ul>
       </fieldset>
-
       <fieldset class="container container--form filter-program filter-program--padding-contact">
         <legend class="filter-program__title">Контактные&nbsp;данные<br>(владельца&nbsp;кота)</legend>
-
         <label class="filter-program__input">
           <span class="filter-program__text">E&nbsp;-&nbsp;mail:<sup>*</sup></span>
           <input class="filter-program__text filter-program__input-text" type="email" name="e-mail"
@@ -141,7 +118,6 @@
             </svg>
           </span>
         </label>
-
         <label class="filter-program__input">
           <span class="filter-program__text">Телефон:<sup>*</sup></span>
           <input class="filter-program__text filter-program__input-text" type="tel" name="tel"
@@ -155,47 +131,40 @@
           </span>
         </label>
       </fieldset>
-
       <fieldset class="container container--form filter-program filter-program--comment">
         <legend class="filter-program__title">Комментарий</legend>
-        <textarea class="filter-program__wrapper" name="comment" id="form-text" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea class="filter-program__wrapper" name="comment" id="form-text"
+          placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
-
       <fieldset class="container container--form filter-program filter-program--extra">
         <legend class="filter-program__title">Дополнительно</legend>
         <ul class="filter-program__list filter-program__list--checkbox">
-
           <li class="filter-program__item-checkbox">
             <label class="control check">
               <input class="filter-program__text checkbox-input" type="checkbox" name="sweetener" checked="checked">
               Сахарозаменитель
             </label>
           </li>
-
           <li class="filter-program__item-checkbox">
             <label class="control">
               <input class="filter-program__text checkbox-input" type="checkbox" name="water">
               Питьевая вода
             </label>
           </li>
-
           <li class="filter-program__item-checkbox">
             <label class="control">
               <input class="filter-program__text checkbox-input" type="checkbox" name="milk">
               Молоко
             </label>
           </li>
-
           <li class="filter-program__item-checkbox">
             <label class="control">
               <input class="filter-program__text checkbox-input" type="checkbox" name="vitamins">
               Витамины
             </label>
           </li>
-
         </ul>
       </fieldset>
-
       <section class="container container--form filter-program__send">
         <h2 class="visually-hidden">Отправить форму</h2>
         <button class="button button--filter" type="submit">
@@ -204,13 +173,9 @@
         <p class="title title--filter">* — Обязательные поля</p>
       </section>
     </form>
-
   </main>
-
-  <!-- Footer -->
   <footer class="main-footer">
     <section class="location">
-
       <div class="container container--form location__wrapper location__wrapper-opaque">
         <h2 class="visually-hidden">Адрес компании</h2>
         <p class="location__dealers">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
@@ -223,7 +188,6 @@
           </a>
         </address>
       </div>
-
       <iframe class="location__map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876791654!2d30.32046711308958!3d59.938716474810505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f6df7d3481%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2s!4v1692992072822!5m2!1sru!2s"
         width="320" height="362" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
@@ -236,7 +200,6 @@
           <source type="image/webp" media="(min-width: 500px)" srcset="img/map-tablet.webp, img/map-tablet@2x.webp 2x"
             width="768" height="400">
           <source type="image/webp" srcset="img/map-mobile.webp, img/map-mobile@2x.webp 2x" width="320" height="362">
-
           <source media="(min-width: 1000px)" srcset="img/map-desktop.png, img/map-desktop@2x.png 2x" width="1440"
             height="400">
           <source media="(min-width: 500px)" srcset="img/map-tablet.png, img/map-tablet@2x.png 2x" width="768"
@@ -246,7 +209,6 @@
         </picture>
       </a>
     </section>
-
     <div class="container main-footer__wrapper">
       <a class="main-footer__logo" href="index.html" aria-current="page">
         <svg class="main-footer__logo-image-text" width="128" height="24" role="img"
@@ -254,39 +216,33 @@
           <use xlink:href="img/sprite.svg#logo-cat-text" aria-hidden="true"></use>
         </svg>
       </a>
-
       <section class="footer-social">
         <h2 class="visually-hidden">Список социальных сетей</h2>
         <ul class="footer-social__list">
-
           <li class="footer-social__link">
             <a class="footer-social__item footer-social__item--vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
-
           <li class="footer-social__link">
-            <a class="footer-social__item footer-social__item--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="footer-social__item footer-social__item--youtube"
+              href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
-
           <li class="footer-social__link">
             <a class="footer-social__item footer-social__item--telegram" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
-
         </ul>
       </section>
-
       <div class="main-footer__academy">
-        <a class="main-footer__academy-link">
+        <a class="main-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="main-footer__academy-text" lang="en">HTML Academy</span>
           <div class="main-footer__academy-image"></div>
         </a>
       </div>
-
     </div>
   </footer>
   <script src="js/script.js"></script>
