@@ -61,6 +61,7 @@
 
     @media (min-width: $width-desktop) {
       grid-column: 1/-1;
+      margin: 0 auto 0 82px;
     }
   }
 
@@ -78,6 +79,7 @@
 
   @media (min-width: $width-desktop) {
     margin: 189px 110px -8px -30px;
+    padding: 0 0 43px;
     height: 288px;
     width: 245px;
     background-image: url("../img/catalog/gift-cat-desktop.png");

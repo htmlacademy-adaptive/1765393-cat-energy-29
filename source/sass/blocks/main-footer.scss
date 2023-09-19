@@ -11,27 +11,24 @@
   font-family: var(--font-secondary);
   font-size: 16px;
   line-height: 20px;
+  color: $dark-grey;
 
   &:active {
     opacity: 0.3;
   }
 }
 
-.main-footer__academy-link {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-
-  @media (min-width: $width-tablet) {
-    display: flex;
-    gap: 23px;
-    flex-wrap: wrap;
-  }
-}
-
 .main-footer__logo {
   align-items: center;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $width-tablet) {
     margin-top: -10px;
@@ -58,16 +55,40 @@
 }
 
 .main-footer__logo-image-text {
+  &:hover,
   &:focus {
-    stroke: $cat-energy-focus;
+    opacity: 0.8;
   }
 
   &:active {
-    stroke: $cat-energy-active;
+    opacity: 0.6;
   }
 
   @media (min-width: $width-desktop) {
     margin-top: 10px;
+  }
+}
+
+.main-footer__academy-link {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    gap: 23px;
+    flex-wrap: wrap;
+    margin-top: -9px;
   }
 }
 
@@ -78,6 +99,7 @@
   height: 34px;
   background-color: $special_grey-2;
 
+  &:hover,
   &:focus {
     background-color: $basic-green;
   }

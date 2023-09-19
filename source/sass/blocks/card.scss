@@ -57,6 +57,11 @@
     margin-top: 21px;
     margin-bottom: 11px;
   }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .card__text {
@@ -125,13 +130,10 @@
   background-color: $basic-grey;
   color: $dark-grey;
 
-  &:hover {
-    background-color: $basic-grey-hover;
-  }
-
+  &:hover,
   &:active {
     background-color: $basic-grey-hover;
-    color: $dark-grey-opacity;
+    color: $dark-grey;
   }
 }
 
@@ -217,7 +219,8 @@
   @media (min-width: $width-desktop) {
     width: 244px;
     grid-column: 3/4;
-    margin-top: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
