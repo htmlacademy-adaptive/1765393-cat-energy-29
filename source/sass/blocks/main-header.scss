@@ -84,6 +84,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $width-tablet) {
     position: static;
     align-self: center;

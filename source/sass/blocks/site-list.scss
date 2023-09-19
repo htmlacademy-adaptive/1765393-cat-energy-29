@@ -3,11 +3,27 @@
 
 .site-list__link {
   color: $basic-black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .site-list__link--transparent {
   @media (min-width: $width-desktop) {
     color: $basic-white;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 

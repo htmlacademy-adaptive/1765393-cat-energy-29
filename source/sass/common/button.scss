@@ -27,7 +27,8 @@
 }
 
 .button--filter {
-  margin-bottom: 21px;
+  margin-bottom: 22px;
+  margin-top: -4px;
   padding: 9px;
   width: 100%;
 
@@ -41,6 +42,7 @@
 
   @media (min-width: $width-desktop) {
     margin-left: 110px;
+    margin-bottom: 34px;
     max-width: 100%;
     width: auto;
   }

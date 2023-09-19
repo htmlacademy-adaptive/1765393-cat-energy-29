@@ -32,34 +32,36 @@
   grid-template-columns: min-content 1fr;
   align-items: center;
   position: relative;
+}
 
-  .filter-program__input-text {
-    padding: 13px;
+.filter-program__input-text {
+  padding: 13px;
+  outline: 1px solid $outline-textarea;
+  border: none;
+
+  &:hover {
+    outline: 1px solid $outline-textarea-hover;
+  }
+
+  &:active {
     outline: 1px solid $outline-textarea;
     border: none;
   }
 
-  &:hover {
-    .filter-program__input-text {
-      outline: 1px solid $outline-textarea-hover;
-    }
-  }
-
-  &:active {
-    .filter-program__input-text {
-      outline: 1px solid $outline-textarea;
-      border: none;
-    }
-  }
-
   &:focus {
-    .filter-program__input-text {
-      outline: 2px solid $dark-grey;
-    }
+    outline: 2px solid $dark-grey;
+  }
 
-    .filter-program__icon path {
-      stroke: $basic-green;
-    }
+  &:focus + .filter-program__icon path {
+    stroke: $basic-green;
+  }
+}
+
+.filter-program__input-text--error {
+  outline: 1px solid $error;
+
+  & + .filter-program__icon path {
+    stroke: $error;
   }
 }
 
@@ -162,8 +164,9 @@
     --padding-form: 40px;
 
     padding-top: 50px;
-    padding-bottom: 39px;
+    padding-bottom: 50px;
     margin-inline: -40px;
+    margin-bottom: 17px;
     font-size: 36px;
     line-height: 36px;
 
@@ -174,6 +177,8 @@
 
   @media (min-width: $width-desktop) {
     padding-top: 0;
+    padding-bottom: 25px;
+    margin-bottom: 42px;
   }
 }
 
@@ -281,7 +286,7 @@
 }
 
 .filter-program--comment {
-  margin-top: -9px;
+  margin-top: -3px;
   margin-bottom: -11px;
 
   @media (min-width: $width-tablet) {
