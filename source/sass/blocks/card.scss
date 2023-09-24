@@ -241,6 +241,18 @@
   @media (min-width: $width-tablet) {
     margin-top: -5px;
   }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 4px;
+    margin-left: -14px;
+  }
+
+  &--xl {
+    @media (min-width: $width-desktop) {
+      margin-top: 4px;
+      margin-left: -10px;
+    }
+  }
 }
 
 .card__image-link {
@@ -251,9 +263,11 @@
   @media (min-width: $width-tablet) {
     width: 200px;
   }
+}
 
+.card__image-link--xl {
   @media (min-width: $width-desktop) {
-    width: 169px;
+    width: 192px;
   }
 }
 
