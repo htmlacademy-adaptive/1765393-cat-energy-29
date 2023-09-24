@@ -182,14 +182,7 @@
   color: $basic-black;
   grid-column: 1/-1;
   display: flex;
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  &:hover {
-    opacity: 1;
-  }
+  align-items: center;
 
   @media (min-width: $width-tablet) {
     grid-column: 1/2;
@@ -200,18 +193,34 @@
   @media (min-width: $width-desktop) {
     grid-column: 1/-1;
   }
-}
 
-.product__link::after {
-  content: "";
-  background-image: url("../img/icon/arrow.svg");
-  background-repeat: no-repeat;
-  width: 32px;
-  height: 10px;
-  margin-left: 15px;
+  &::after {
+    content: "";
+    background-image: url("../img/icon/arrow.svg");
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 12px;
+    margin-left: 15px;
 
-  @media (min-width: $width-tablet) {
-    margin-left: 25px;
+    @media (min-width: $width-tablet) {
+      margin-left: 25px;
+    }
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    @media (hover: hover) {
+      background-image: url("../img/icon/arrow-active.svg");
+    }
+  }
+
+  &:active {
+    color: $basic-black-opacity;
+
+    &::after {
+      background-image: url("../img/icon/arrow-active.svg");
+      opacity: 0.3;
+    }
   }
 }
 
